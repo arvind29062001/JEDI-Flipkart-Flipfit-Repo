@@ -29,10 +29,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
-  <component name="ProjectId" id="2nC0rhq7tSdUiUkgrINSyaHn9M9" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nBjnFvdwYzwBQsoqgFr8tSwiBb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,25 +41,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "sabarna",
+
+    "git-widget-placeholder": "sam",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/sabarna.bhowmik/Desktop/JEDI-Flipkart-Flipfit-Repo"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.flipfit.business" />
-      <recent name="com.flipfit.client" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5b5f8354-84f5-41f5-8afb-d99165a6b308" name="Changes" comment="" />
-      <created>1728461950523</created>
+      <changelist id="aa32de4f-d478-4e72-ba40-bcfad4867659" name="Changes" comment="" />
+      <created>1728453527198</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1728461950523</updated>
+      <updated>1728453527198</updated>
     </task>
     <servers />
   </component>

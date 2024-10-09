@@ -6,6 +6,11 @@ public class FlipfitGymOwner extends Person{
    private String uniqueIdProof;
    private String gstNumber;
 
+   public FlipfitGymOwner(String userId, String userName, String email, String password, String customerPhone,String unique_id_proof,String uniqueIdProof,String gstNumber) {
+      super(userName,email,customerPhone,userId,password);
+      this.uniqueIdProof=uniqueIdProof;
+      this.gstNumber=gstNumber;
+   }
 
    // Getter & Setter
    public String getUniqueIdProof() {

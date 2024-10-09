@@ -1,6 +1,7 @@
 package com.flipfit.business;
 
-import com.flipkart.bean.FlipFitGymCenter;
+import com.flipfit.bean.FlipfitGym;
+import com.flipfit.bean.FlipfitGymSlot;
 
 import java.util.List;
 import java.util.Date;
@@ -8,10 +9,10 @@ import java.util.Date;
 public interface FlipFitGymCenterInterface {
 
     // View all gym centers
-    List<FlipFitGymCenter> viewAllGymCenters();
+    List<FlipfitGym> viewAllGymCenters();
 
     // View available slots for a specific gym center
-    List<String> viewAvailableSlots(String gymCenterId, Date date);
+    List<FlipfitGymSlot> viewAvailableSlots(String gymId, Date date);
 
     // Get the nearest available slot for a specific gym center
     String getNearestSlot(String gymCenterId, Date date);

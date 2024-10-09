@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa32de4f-d478-4e72-ba40-bcfad4867659" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5b5f8354-84f5-41f5-8afb-d99165a6b308" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitGymOwnerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitGymOwnerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitSlotInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitSlotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/bean/FlipfitGymSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/bean/FlipfitGymSlot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitGymCenterInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitGymCenterInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipfitGymOwnerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipfitGymOwnerMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -35,6 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+
     "git-widget-placeholder": "sam",
     "kotlin-language-version-configured": "true",
     "node.js.selected.package.tslint": "(autodetect)"

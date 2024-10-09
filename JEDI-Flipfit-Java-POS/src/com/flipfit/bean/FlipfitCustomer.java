@@ -1,14 +1,9 @@
-package com.flipkart.bean;
+package com.flipfit.bean;
 
-/**
- * Represents a customer in the FlipFit system, extending FlipFitUser.
- * Contains customer-specific details such as phone number and card details.
- */
-public class FlipFitCustomer extends Person {
+public class FlipfitCustomer extends Person {
 
     List<Booking>bookings;
     String unique_id_proof;
-
 
     public String getUnique_id_proof() {
         return unique_id_proof;
@@ -26,18 +21,12 @@ public class FlipFitCustomer extends Person {
         this.bookings = bookings;
     }
 
-
-    /**
-     * Default constructor.
-     */
-    public FlipFitCustomer() {
+    public FlipfitCustomer() {
 
     }
 
-    public FlipFitCustomer(String userId, String userName, String email, String password, String customerPhone,String unique_id_proof) {
+    public FlipfitCustomer(String userId, String userName, String email, String password, String customerPhone,String unique_id_proof) {
         super(userName,email,customerPhone,userId,password);
         this.unique_id_proof=unique_id_proof;
     }
-
-
 }

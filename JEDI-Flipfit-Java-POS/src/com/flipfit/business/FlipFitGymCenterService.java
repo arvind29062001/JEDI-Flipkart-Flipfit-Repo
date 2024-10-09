@@ -1,6 +1,7 @@
 package com.flipfit.business;
 
 import com.flipfit.bean.FlipfitGym;
+import com.flipfit.bean.FlipfitGymSlot;
 
 import java.util.Collections;
 import java.util.Date;
@@ -14,7 +15,7 @@ public class FlipFitGymCenterService implements FlipFitGymCenterInterface {
     }
 
     @Override
-    public List<String> viewAvailableSlots(String gymId, Date date) {
+    public List<FlipfitGymSlot> viewAvailableSlots(String gymId, Date date) {
         return Collections.emptyList(); // Return an empty list for now
     }
 

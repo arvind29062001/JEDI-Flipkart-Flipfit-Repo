@@ -15,5 +15,10 @@ public interface FlipFitGymCenterInterface {
     List<FlipfitGymSlot> viewAvailableSlots(String gymId, Date date);
 
     // Get the nearest available slot for a specific gym center
-    String getNearestSlot(String gymId, Date date);
+    String getNearestSlot(String gymCenterId, Date date);
+
+
+    List<FlipFitGymCenter> getAllCentresByOwmerId(String gymOwnerId);
+
+    void requestGymCentreApproval(String gymCentreId);
 }

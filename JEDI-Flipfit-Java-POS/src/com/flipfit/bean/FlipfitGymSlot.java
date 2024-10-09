@@ -8,6 +8,15 @@ public class FlipfitGymSlot {
     private String bookingDate;
     private String startTime;
     private List<FlipfitCustomer> userList;
+
+    public FlipfitGymSlot(String gymId, String bookingDate, String startTime) {
+        this.gymId = gymId;
+        this.bookingDate = bookingDate;
+        this.startTime = startTime;
+//        this.userList = userList;
+//        this.waitingList = waitingList;
+    }
+
     private List<FlipfitCustomer> waitingList;
 
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class FlipfitCustomer extends Person {
 
-    List<Booking>bookings;
+    List<Booking> bookings;
     String unique_id_proof;
 
     public String getUnique_id_proof() {

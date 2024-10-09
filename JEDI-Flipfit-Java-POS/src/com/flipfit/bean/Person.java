@@ -3,21 +3,19 @@ package com.flipfit.bean;
 public class Person {
 
 
+    private String personId;
     private String name;
     private String email;
     private String phoneNumber;
-    private String personId;
     private  String address;
 
-    public Person(String name, String email, String phoneNumber, String personId, String address) {
+    public Person(String personId, String name, String email, String phoneNumber, String address) {
+        this.personId = personId;
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.personId = personId;
         this.address = address;
     }
-
-
 
 
 

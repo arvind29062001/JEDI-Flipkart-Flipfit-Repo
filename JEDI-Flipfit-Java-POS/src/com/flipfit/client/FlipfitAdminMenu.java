@@ -8,6 +8,10 @@ public class FlipfitAdminMenu {
         return true;
     }
 
+    public void updatePassword(String email,String oldPassword,String newPassword){
+        System.out.println("Password updated successfully");
+    }
+
     public void handleGymCentreApprovalRequests(){
         System.out.println("Gym centre approval requests here");
 
@@ -25,7 +29,7 @@ public class FlipfitAdminMenu {
     }
 
     public void adminClientMainPage(){
-        System.out.println("Admin client main page here");
+        System.out.println("Welcome to Flipfit application :-->");
 
         while(true){
             System.out.println(

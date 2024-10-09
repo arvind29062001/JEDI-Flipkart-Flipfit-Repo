@@ -10,6 +10,15 @@ public class FlipfitGymOwnerMenu {
         return true;
     }
 
+
+    public void gymOwnerRegister(String userName, String name, String password,String mobno,String Address,String idProof) {
+        System.out.println("Gym owner Successfully Registered ");
+    }
+
+
+    public void updatePassword(String email,String oldPassword,String newPassword){
+        System.out.println("Password updated successfully");
+    }
     public void gymOwnerClientMainPage(String gymOwnerId){
         System.out.println("Gym Owner Client Main Page");
 

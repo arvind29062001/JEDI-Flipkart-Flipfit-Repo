@@ -1,24 +1,26 @@
 package com.flipfit.client;
 
+import java.sql.Date;
 import java.sql.SQLOutput;
 import java.sql.Timestamp;
 import java.text.ParseException;
 
 public class FlipFitCustomerMenu {
-    public boolean customerLogin(String userName, String password) throws ParseException {
-        if (valid) {
+
+    public boolean customerLogin(String userName, String password)  {
+//        if (valid) {
             System.out.println("Successfully logged in");
-        } else {
-            System.out.println("UserName or password doesn't match");
-            return false;
-        }
+//        }
         return true;
     }
 
-    public void customerRegister() throws ParseException {
-        System.out.println("Enter your Username/Password/Email/Phone Number");
+    public void customerRegister(String userName, String password,String name,String mobno,String Address) {
+        System.out.println("Customer Successfully Registered ");
     }
 
+    public void updatePassword(String email,String oldPassword,String newPassword){
+        System.out.println("Password updated successfully");
+    }
     private void viewGym(String userName, String location) throws ParseException {
         System.out.println("Provide Location to search : ");
     }

@@ -1,27 +1,27 @@
 package com.flipfit.business;
 
-import com.flipkart.bean.FlipFitGymCenter;
-import com.flipkart.bean.FlipFitGymOwner;
+import com.flipfit.bean.FlipfitGym;
+import com.flipfit.bean.FlipfitGymOwner;
 
 import java.util.List;
 
 public interface FlipFitAdminInterface {
 
     // Approve a gym
-    void approveGym(String gymCenterId);
+    void approveGym(String gymId);
 
     // Cancel approval of a gym
-    void cancelApproval(String gymCenterId);
+    void cancelApproval(String gymId);
 
     // Edit a gym owner's profile
-    void editAdminProfile(String gymAdminId, FlipFitGymOwner updatedProfile);
+    void editAdminProfile(String gymOwnerId, FlipfitGymOwner updatedProfile);
 
     // View approved gym centers
-    List<FlipFitGymCenter> viewApprovedGymCenters();
+    List<FlipfitGym> viewApprovedGyms();
 
     // View pending gym centers
-    List<FlipFitGymCenter> viewPendingGymCenters();
+    List<FlipfitGym> viewPendingGyms();
 
     // Search for gyms by gymId or other criteria
-    List<FlipFitGymCenter> search(String gymCenterId);
+    List<FlipfitGym> search(String gymId);
 }

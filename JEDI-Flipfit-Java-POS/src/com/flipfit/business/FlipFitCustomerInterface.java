@@ -10,8 +10,12 @@ public interface FlipFitCustomerInterface {
     List<FlipfitGymSlot> slotBooking(String centreID, Date date);
     List<Booking> viewBooking(String customerId);
     boolean bookSlot(String userID, Date date, String slotId, String centreId);
-    void cancelSlot(String bookingID);
-    void register(String userName, String password, String email, String phoneNumber, String cardNumber);
+    boolean cancelSlot(String bookingID);
     FlipfitCustomer checkStatus(String userId, String gymId, String startTime);
     boolean login(String userName, String password);
+
+    void registerCustomer(String userName, String password, String email, String phoneNumber, String cardNumber);
+    boolean isUserValid(String userName, String password);
+
+    List<FlipfitGymSlot> getAvailableSlots(String gymId, Date sqlDate);
 }

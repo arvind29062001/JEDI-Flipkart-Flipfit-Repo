@@ -3,11 +3,10 @@ import com.flipfit.bean.Booking;
 import com.flipfit.bean.FlipfitCustomer;
 import com.flipfit.bean.FlipfitGym;
 import com.flipfit.bean.FlipfitGymSlot;
-import com.flipfit.business.FlipFitCustomerInterface;
-import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
-class FlipFitCustomerService implements FlipFitCustomerInterface {
+public class FlipFitCustomerService implements FlipFitCustomerInterface {
     @Override
     public List<FlipfitGym> viewGym(String city) {
         return List.of();
@@ -25,11 +24,10 @@ class FlipFitCustomerService implements FlipFitCustomerInterface {
         return false;
     }
     @Override
-    public void cancelSlot(String bookingID) {
+    public boolean cancelSlot(String bookingID) {
+        return false;
     }
-    @Override
-    public void register(String userName, String password, String email, String phoneNumber, String cardNumber) {
-    }
+
     @Override
     public FlipfitCustomer checkStatus(String userId, String gymId, String startTime) {
         return null;
@@ -37,5 +35,20 @@ class FlipFitCustomerService implements FlipFitCustomerInterface {
     @Override
     public boolean login(String userName, String password) {
         return false;
+    }
+
+    @Override
+    public void registerCustomer(String userName, String password, String email, String phoneNumber, String cardNumber) {
+
+    }
+
+    @Override
+    public boolean isUserValid(String userName, String password) {
+        return false;
+    }
+
+    @Override
+    public List<FlipfitGymSlot> getAvailableSlots(String gymId, Date sqlDate) {
+        return List.of();
     }
 }

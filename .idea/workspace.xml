@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa32de4f-d478-4e72-ba40-bcfad4867659" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitCustomerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitCustomerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/business/FlipFitCustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipFitCustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipFitCustomerMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

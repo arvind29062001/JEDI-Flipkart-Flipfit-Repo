@@ -9,6 +9,16 @@ public class Person {
     private String phoneNumber;
     private  String address;
 
+    public Person(String personId, String name, String email, String phoneNumber, String address) {
+        this.personId = personId;
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+    }
+
+
+
 
     // Getter & Setter
 

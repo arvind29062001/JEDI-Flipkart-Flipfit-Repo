@@ -1,8 +1,10 @@
 package com.flipfit.bean;
 
+import java.util.List;
+
 public class FlipfitCustomer extends Person {
 
-    List<Booking>bookings;
+    List<Booking> bookings;
     String unique_id_proof;
 
     public String getUnique_id_proof() {
@@ -21,9 +23,6 @@ public class FlipfitCustomer extends Person {
         this.bookings = bookings;
     }
 
-    public FlipfitCustomer() {
-
-    }
 
     public FlipfitCustomer(String userId, String userName, String email, String password, String customerPhone,String unique_id_proof) {
         super(userName,email,customerPhone,userId,password);

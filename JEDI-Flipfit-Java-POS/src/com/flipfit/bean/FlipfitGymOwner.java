@@ -24,17 +24,17 @@ public class FlipfitGymOwner extends Person{
       this.gstNumber = gstNumber;
    }
 
-
-   //Method
-
-   public void registerGym(){
-
-   }
-
-   public void updateSlot(){
-
-
-   }
+//
+//   //Method
+//
+//   public void registerGym(){
+//
+//   }
+//
+//   public void updateSlot(){
+//
+//
+//   }
 
 
 

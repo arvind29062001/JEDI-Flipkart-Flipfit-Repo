@@ -55,15 +55,15 @@ public class FlipfitGymSlot {
 
 
 
-   //Method
-
-    public void bookSlot(){
-
-    }
-
-    public void cancelSlot(){
-
-    }
+//   //Method
+//
+//    public void bookSlot(){
+//
+//    }
+//
+//    public void cancelSlot(){
+//
+//    }
 
 
 }

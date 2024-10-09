@@ -53,18 +53,18 @@ public class Person {
     }
 
 
-    //Method
-    public void login(){
-
-    }
-
-    public void register(){
-
-    }
-
-    public void editProfile(){
-
-    }
+//    //Method
+//    public void login(){
+//
+//    }
+//
+//    public void register(){
+//
+//    }
+//
+//    public void editProfile(){
+//
+//    }
 
 
 

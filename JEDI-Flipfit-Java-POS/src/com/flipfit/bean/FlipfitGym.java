@@ -65,16 +65,16 @@ public class FlipfitGym {
     }
 
 
-    //Method
-
-    public void viewAvailableSlots(){
-
-    }
-
-    public void getNearestSlot(){
-
-
-    }
+//    //Method
+//
+//    public void viewAvailableSlots(){
+//
+//    }
+//
+//    public void getNearestSlot(){
+//
+//
+//    }
 
 
 

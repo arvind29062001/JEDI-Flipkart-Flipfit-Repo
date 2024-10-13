@@ -4,7 +4,7 @@ import com.flipfit.bean.FlipFitCustomer;
 
 public interface FlipFitCustomerDAOInterface {
 
-    void registerCustomer(String name, String email, String password, String phoneNumber);
+    void registerCustomer(String name, String email, String password, String phoneNumber,String govId);
 
     boolean isUserValid(String name, String password);
 

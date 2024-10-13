@@ -50,6 +50,7 @@ public class FlipFitScheduleService implements FlipFitScheduleInterface {
         List<FlipFitSchedule> allAvailableSchedules = new ArrayList<>();
         for(FlipFitSlot slot : allSlotsForGym){
             String slotId = slot.getSlotId();
+            System.out.println("check availability...");
             FlipFitSchedule schedule = getOrCreateSchedule(slotId, date);
             if(schedule.getAvailability() > 0)
                 allAvailableSchedules.add(schedule);
@@ -58,6 +59,7 @@ public class FlipFitScheduleService implements FlipFitScheduleInterface {
     }
 
     public List<FlipFitSlot> getAllAvailableSlotsByDate(String centerId, Date date) {
+        System.out.println(5);
         List<FlipFitSlot> allSlotsOfThatCentre = slotService.getAllSlotsByGymCenter(centerId);
         List<FlipFitSlot> response = slotService.getAllSlotsByGymCenter(centerId);
         for(FlipFitSlot slot: allSlotsOfThatCentre){

@@ -13,7 +13,7 @@ import java.util.UUID;
 
 public class FlipFitCustomerDAO implements FlipFitCustomerDAOInterface {
 
-    public void registerCustomer(String name, String email, String password, String phoneNumber) {
+    public void registerCustomer(String name, String email, String password, String phoneNumber,String govId) {
         try {
             Connection conn = DatabaseConnection.connect();
             conn.setAutoCommit(false);
@@ -31,6 +31,7 @@ public class FlipFitCustomerDAO implements FlipFitCustomerDAOInterface {
             ps = conn.prepareStatement(SQLConstants.ADD_NEW_CUSTOMER);
             ps.setString(1, personId);
             ps.setString(2, phoneNumber);
+            ps.setString(3,govId);
             ps.executeUpdate();
 
             conn.commit();
@@ -71,7 +72,8 @@ public class FlipFitCustomerDAO implements FlipFitCustomerDAOInterface {
                     rs.getString("name"),
                     rs.getString("email"),
                     rs.getString("password"),
-                    rs.getString("phoneNumber")
+                    rs.getString("phoneNumber"),
+                    rs.getString("govId")
             );
             ps.close();
             return flipFitCustomer;

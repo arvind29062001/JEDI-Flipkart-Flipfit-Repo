@@ -4,9 +4,10 @@ public class FlipFitCustomer extends Person {
     private String phoneNumber;
     private String govId;
 
-    public FlipFitCustomer(String id, String name, String email, String password, String phoneNumber) {
+    public FlipFitCustomer(String id, String name, String email, String password, String phoneNumber,String govId) {
         super(id, name, email, password, FlipFitRole.CUSTOMER);
         this.phoneNumber = phoneNumber;
+        this.govId=govId;
     }
 
     public String getPhoneNumber() {

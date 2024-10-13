@@ -18,9 +18,9 @@ public class FlipFitCustomerService implements FlipFitCustomerInterface {
     private FlipFitSlotInterface slotService = new FlipFitSlotService();
     private FlipFitCustomerDAO customerDAO = new FlipFitCustomerDAO();
 
-    public void registerCustomer(String username, String email, String password, String phoneNumber) {
+    public void registerCustomer(String username, String email, String password, String phoneNumber,String govId) {
         try {
-            customerDAO.registerCustomer(username,password,email,phoneNumber);
+            customerDAO.registerCustomer(username,password,email,phoneNumber,govId);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -31,6 +31,7 @@ public class FlipFitCustomerService implements FlipFitCustomerInterface {
     }
 
     public List<FlipFitSlot> getAvailableSlots(String centerId, Date date) {
+        System.out.println(3);
         return gymCenterService.getAvailableSlotsByCenterAndDate(centerId, date);
     }
 

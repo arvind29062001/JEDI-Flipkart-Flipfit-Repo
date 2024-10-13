@@ -12,7 +12,7 @@ public class DatabaseConnection {
         if (singleInstance == null) {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/FlipFit", "root", "Ge2teita!@#%");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/FlipFit", "root", "Arvind@123");
                 System.out.println("Database connected!");
                 singleInstance = conn;
                 return conn;

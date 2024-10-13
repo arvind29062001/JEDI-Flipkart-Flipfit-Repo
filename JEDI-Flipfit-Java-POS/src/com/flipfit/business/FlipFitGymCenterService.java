@@ -24,6 +24,7 @@ public class FlipFitGymCenterService implements FlipFitGymCenterInterface {
     }
 
     public List<FlipFitSlot> getAvailableSlotsByCenterAndDate(String centreID, java.util.Date date) {
+        System.out.println(4);
         return scheduleService.getAllAvailableSlotsByDate(centreID, date);
     }
 

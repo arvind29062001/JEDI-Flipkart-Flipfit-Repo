@@ -57,7 +57,7 @@ public class FlipFitScheduleDAO implements FlipFitScheduleDAOInterface {
             PreparedStatement ps = conn.prepareStatement(SQLConstants.GET_SCHEDULES_BY_DATE);
             ps.setString(1, date.toString());
             ResultSet rs = ps.executeQuery();
-
+            System.out.println(date.toString());
             while(rs.next()) {
                 String slotId = rs.getString("slotId");
                 int availability = rs.getInt("availability");

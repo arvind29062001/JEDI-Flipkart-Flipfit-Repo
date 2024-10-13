@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface FlipFitCustomerInterface {
 
-    void registerCustomer(String username, String email, String password, String phoneNumber);
+    void registerCustomer(String username, String email, String password, String phoneNumber,String govId);
 
     List<FlipFitGymCenter> getGymCentersListByCity(String city);
 

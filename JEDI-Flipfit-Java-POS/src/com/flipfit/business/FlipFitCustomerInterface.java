@@ -1,17 +1,31 @@
 package com.flipfit.business;
-import com.flipfit.bean.Booking;
-import com.flipfit.bean.FlipfitCustomer;
-import com.flipfit.bean.FlipfitGym;
-import com.flipfit.bean.FlipfitGymSlot;
+
+import com.flipfit.bean.FlipFitBooking;
+import com.flipfit.bean.FlipFitCustomer;
+import com.flipfit.bean.FlipFitGymCenter;
+import com.flipfit.bean.FlipFitSlot;
+import com.flipfit.helper.UserPlan;
+
 import java.util.Date;
 import java.util.List;
+
 public interface FlipFitCustomerInterface {
-    List<FlipfitGym> viewGym(String city);
-    List<FlipfitGymSlot> slotBooking(String centreID, Date date);
-    List<Booking> viewBooking(String customerId);
-    boolean bookSlot(String userID, Date date, String slotId, String centreId);
-    void cancelSlot(String bookingID);
-    void register(String userName, String password, String email, String phoneNumber, String cardNumber);
-    FlipfitCustomer checkStatus(String userId, String gymId, String startTime);
-    boolean login(String userName, String password);
+
+    void registerCustomer(String username, String email, String password, String phoneNumber);
+
+    List<FlipFitGymCenter> getGymCentersListByCity(String city);
+
+    List<FlipFitSlot> getAvailableSlots(String centerId, Date date);
+
+    List<FlipFitBooking> getCustomerBookings(String customerId);
+
+    boolean bookSlot(String customerId, Date date, String slotId, String centerId);
+
+    void cancelBookingById(String bookingId);
+
+    List<UserPlan> getCustomerPlan(String userName);
+
+    boolean isUserValid(String userName, String password);
+
+    FlipFitCustomer viewMyProfile(String userName);
 }

@@ -1,26 +1,42 @@
 package com.flipfit.business;
 
-import com.flipfit.bean.FlipfitGym;
-import com.flipfit.bean.FlipfitGymSlot;
+import com.flipfit.bean.FlipFitGymCenter;
+import com.flipfit.bean.FlipFitSlot;
+import com.flipfit.dao.FlipFitGymCenterDAO;
 
-import java.util.Collections;
-import java.util.Date;
 import java.util.List;
 
 public class FlipFitGymCenterService implements FlipFitGymCenterInterface {
 
-    @Override
-    public List<FlipfitGym> viewAllGymCenters() {
-        return Collections.emptyList(); // Return an empty list for now
+    private final static FlipFitGymCenterDAO flipFitGymCenterDAO = new FlipFitGymCenterDAO();
+    private final static FlipFitScheduleInterface scheduleService = new FlipFitScheduleService();
+
+    public List<FlipFitGymCenter> getAllGymCenters() {
+        return flipFitGymCenterDAO.getAllGymCenters();
     }
 
-    @Override
-    public List<FlipfitGymSlot> viewAvailableSlots(String gymId, Date date) {
-        return Collections.emptyList(); // Return an empty list for now
+    public List<FlipFitGymCenter> getGymCentersByOwnerId(String gymOwnerId) {
+        return flipFitGymCenterDAO.getAllGymCentersByOwnerId(gymOwnerId);
     }
 
-    @Override
-    public String getNearestSlot(String gymId, Date date) {
-        return ""; // Return an empty string for now
+    public List<FlipFitGymCenter> getGymCentersByCity(String city){
+        return flipFitGymCenterDAO.getGymCentersListByCity(city);
+    }
+
+    public List<FlipFitSlot> getAvailableSlotsByCenterAndDate(String centreID, java.util.Date date) {
+        return scheduleService.getAllAvailableSlotsByDate(centreID, date);
+    }
+
+    public void addCenter(FlipFitGymCenter gymCentre) {
+        //takes gymCenter details
+        flipFitGymCenterDAO.addGymCenter(gymCentre);
+    }
+
+    public void requestGymCenterApproval(String gymCentreId){
+        flipFitGymCenterDAO.sendGymCenterApprovalRequest(gymCentreId);
+    }
+
+    public FlipFitGymCenter getGymCenterById(String centreID) {
+        return flipFitGymCenterDAO.getGymCenterById(centreID);
     }
 }

@@ -1,24 +1,24 @@
 package com.flipfit.business;
 
-import com.flipfit.bean.FlipfitGym;
-import com.flipfit.bean.FlipfitGymSlot;
+import com.flipfit.bean.FlipFitGymCenter;
+import com.flipfit.bean.FlipFitSlot;
 
-import java.util.List;
 import java.util.Date;
+import java.util.List;
 
 public interface FlipFitGymCenterInterface {
 
-    // View all gym centers
-    List<FlipfitGym> viewAllGymCenters();
+    List<FlipFitGymCenter> getAllGymCenters();
 
-    // View available slots for a specific gym center
-    List<FlipfitGymSlot> viewAvailableSlots(String gymId, Date date);
+    List<FlipFitGymCenter> getGymCentersByOwnerId(String gymOwnerId);
 
-    // Get the nearest available slot for a specific gym center
-    String getNearestSlot(String gymCenterId, Date date);
+    List<FlipFitGymCenter> getGymCentersByCity(String city);
 
+    List<FlipFitSlot> getAvailableSlotsByCenterAndDate(String centerId, Date date);
 
-    List<FlipFitGymCenter> getAllCentresByOwmerId(String gymOwnerId);
+    void addCenter(FlipFitGymCenter gymCenter);
 
-    void requestGymCentreApproval(String gymCentreId);
+    void requestGymCenterApproval(String gymCenterId);
+
+    FlipFitGymCenter getGymCenterById(String gymCenterId);
 }

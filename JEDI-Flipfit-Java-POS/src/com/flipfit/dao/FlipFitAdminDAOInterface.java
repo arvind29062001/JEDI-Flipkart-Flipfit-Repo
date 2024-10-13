@@ -1,14 +1,14 @@
-package com.flipfit.business;
+package com.flipfit.dao;
 
 import com.flipfit.bean.FlipFitGymCenter;
 
 import java.util.List;
 
-public interface FlipFitAdminInterface {
-
-    void approveGymCenter(String gymCenterId, boolean isApproved);
+public interface FlipFitAdminDAOInterface {
 
     List<FlipFitGymCenter> getPendingGymCentersList();
+
+    void validateGymCenter(String gymCenterId, boolean isApproved);
 
     List<FlipFitGymCenter> getAllGymCentersList();
 

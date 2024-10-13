@@ -1,19 +1,29 @@
 package com.flipfit.business;
 
-public class FlipFitGymOwnerService implements  FlipFitGymOwnerInterface{
-    @Override
-    public boolean loginGymOwner(String userName, String password){
-        System.out.println("Gym owner login");
-        return  true;
+import com.flipfit.bean.FlipFitGymOwner;
+import com.flipfit.dao.FlipFitGymOwnerDAO;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+public class FlipFitGymOwnerService implements FlipFitGymOwnerInterface {
+
+    private static final FlipFitGymOwnerDAO flipFitGymOwnerDAO = new FlipFitGymOwnerDAO();
+
+    public List<FlipFitGymOwner> getAllGymOwners() {
+        return flipFitGymOwnerDAO.getGymOwnerList();
     }
 
-    @Override
-    public void registerGymOwner(String userName, String userName1, String password, String email, String panNumber, String cardNumber) {
-        System.out.println("Gym owner registration");
-    }
-    @Override
-    public void requestGymOwnerApproval(String gymOwnerId) {
-        System.out.println("Admin approving request of gym owner");
+    public FlipFitGymOwner loginGymOwner(String username,String password){
+        return flipFitGymOwnerDAO.loginGymOwner(username,password);
     }
 
+    public void registerGymOwner(String userName, String password, String email, String govId) {
+        flipFitGymOwnerDAO.registerGymOwner(new FlipFitGymOwner(UUID.randomUUID().toString(), userName,email,password, govId));
+    }
+
+    public FlipFitGymOwner getGymOwnerByOwnerId(String ownerId) {
+        return flipFitGymOwnerDAO.getGymOwnerByOwnerId(ownerId);
+    }
 }

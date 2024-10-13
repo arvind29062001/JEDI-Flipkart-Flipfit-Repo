@@ -1,7 +1,10 @@
 package com.flipfit.client;
 
-import com.flipfit.bean.FlipfitGymSlot;
+import com.flipfit.bean.FlipFitGymCenter;
+import com.flipfit.bean.FlipFitGymOwner;
+import com.flipfit.bean.FlipFitSlot;
 import com.flipfit.business.*;
+import static com.flipfit.helper.Helper.*;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -9,31 +12,29 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.UUID;
 
-public class FlipfitGymOwnerMenu {
+public class FlipFitGymOwnerMenu {
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final FlipFitGymOwnerInterface gymOwnerService = new FlipFitGymOwnerService();
+    private static final FlipFitGymCenterInterface gymCenterService = new FlipFitGymCenterService();
+    private static final FlipFitSlotInterface slotService = new FlipFitSlotService();
 
-    private FlipFitGymOwnerInterface gymOwnerService = new FlipFitGymOwnerService();
-    private FlipFitSlotInterface slotService = new FlipFitSlotService();
-    private FlipFitGymCenterInterface gymCentreService = new FlipFitGymCenterService();
-    Scanner scanner=new Scanner(System.in);
 
-
-    public boolean gymOwnerLogin(String userName, String password) {
-        if (gymOwnerService.loginGymOwner(userName,password)) {
-            System.out.println("Successfully logged in");
-            gymOwnerClientMainPage(userName);
+    public boolean gymOwnerLogin(String username, String password) {
+        FlipFitGymOwner gymOwner = gymOwnerService.loginGymOwner(username, password);
+        if(gymOwner != null) {
+            System.out.println("Gym  owner logged in");
+            gymOwnerClientMainPage(gymOwner);
         } else {
             return false;
         }
         return true;
     }
 
-
-
     public void register() {
-
         System.out.println("Enter your Username");
-        String userName = scanner.next();
+        String username = scanner.next();
 
         System.out.println("Enter your Password");
         String password = scanner.next();
@@ -41,125 +42,101 @@ public class FlipfitGymOwnerMenu {
         System.out.println("Enter your Email");
         String email = scanner.next();
 
-        System.out.println("Enter your PAN Number");
-        String panNumber = scanner.next();
+        System.out.println("Enter your Gov ID Number");
+        String govId = scanner.next();
 
-        System.out.println("Enter your Card Number");
-        String cardNumber = scanner.next();
-
-        gymOwnerService.registerGymOwner(userName,userName,password,email,panNumber,cardNumber);
-//        gymOwnerClientMainPage(userName);
+        gymOwnerService.registerGymOwner(username, password, email, govId);
     }
 
-
-    public void gymOwnerClientMainPage(String gymOwnerId) {
+    public void gymOwnerClientMainPage(FlipFitGymOwner gymOwner) {
         LocalDateTime currentTime = LocalDateTime.now();
         DateTimeFormatter myFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         String formattedDate = currentTime.format(myFormat);
-        System.out.println("Welcome " + gymOwnerId + " !!\nPlease choose from the following options\nLogin TIME: " + currentTime);
-        while (true) {
-            System.out.println("" +
-                    "0. View all Gym Centres\n" +
-                    "1. Send Gym Owner Approval Request to Admin\n" +
-                    "2. Add new Gym Center\n" +
-                    "3. Send Gym Centre Approval Request to Admin\n" +
-                    "4. Add Slots to a Gym Centre\n" +
-                    "5. Go Back to Previous Menu"
+        System.out.println("Welcome " + gymOwner.getName() + " !!\nPlease choose from the following options\nLogin TIME: " + currentTime);
+        while(true){
+            System.out.println(
+                    "1. View your Gym Centers\n" +
+                    "2. Request to add a new Gym Center\n" +
+                    "3. Add Slots to a Gym Center\n" +
+                    "4. Go Back to Previous Menu"
             );
-            int choice = scanner.nextInt();
-            switch (choice) {
 
-                case 0:
-                    List<FlipFitGymCenter> allGymCentres = gymCentreService.getAllCentresByOwmerId(gymOwnerId);
-                    printGymCentres(allGymCentres);
-                    break;
+            int choice = scanner.nextInt();
+            switch (choice){
 
                 case 1:
-                    gymOwnerService.requestGymOwnerApproval(gymOwnerId);
+                    List<FlipFitGymCenter> allGymCentres = gymCenterService.getGymCentersByOwnerId(gymOwner.getId());
+                    printGymCenters(allGymCentres);
                     break;
 
-                case 2:
-                    System.out.println("Enter gym centre id: ");
-                    String gymId = scanner.next();
 
-                    System.out.println("Enter Gym Centre name: ");
+                case 2:
+
+                    System.out.println("Enter Gym center name: ");
                     String gymCentreName = scanner.next();
 
-                    System.out.println("Enter Gym Centre GSTIN: ");
-                    String gstin = scanner.next();
-
-                    System.out.println("Enter Gym Centre city: ");
+                    System.out.println("Enter Gym center city: ");
                     String city = scanner.next();
 
-                    System.out.println("Enter Gym Centre capacity: ");
+                    System.out.println("Enter Gym center capacity: ");
                     int capacity = scanner.nextInt();
 
                     System.out.println("Enter price: ");
                     int price = scanner.nextInt();
 
-                    gymCentreService.addCenter(
+                    System.out.println(gymOwner.getId() + gymCentreName + city);
+
+
+                    gymCenterService.addCenter(
                             new FlipFitGymCenter(
-                                    gymId,
-                                    gymOwnerId,
+                                    UUID.randomUUID().toString(),
                                     gymCentreName,
-                                    gstin,
+                                    gymOwner.getId(),
                                     city,
                                     capacity,
                                     price,
                                     false
                             )
                     );
+                    System.out.println("Request sent to admin");
                     break;
 
                 case 3:
-
-                    System.out.println("Enter Gym Centre Id: ");
-                    String gymCentreId = scanner.next();
-
-                    gymCentreService.requestGymCentreApproval(gymCentreId);
-                    break;
-
-                case 4:
-
                     boolean isAdding = true;
+                    String centerId = null;
 
-
-                    List<FlipfitGymSlot> newSlotList = new ArrayList<>();
+                    List<FlipFitSlot> newSlotList = new ArrayList<>();
                     while (isAdding) {
+                        System.out.println("Enter new slot id: ");
+                        String slotId = scanner.next();
 
                         System.out.println("Enter Gym Centre Id: ");
-                        String gymId = scanner.next();
-
-                        System.out.println("Enter booking Date ");
-                        String bookingDate = scanner.next();
+                        centerId = scanner.next();
 
                         System.out.println("Enter time in 24h format (hh:mm:ss) : ");
-                        String startTime = scanner.next();
+                        String time = scanner.next();
 
-//                        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-//                        LocalTime  startTime= LocalTime.parse(startTime, formatter);
+                        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+                        LocalTime localTime = LocalTime.parse(time, formatter);
 
-                        newSlotList.add(new FlipfitGymSlot(
-                                gymId,
-                                bookingDate,
-                                startTime
-
-
+                        newSlotList.add(new FlipFitSlot(
+                                slotId,
+                                centerId,
+                                localTime
                         ));
 
                         System.out.println("Do you want to enter more slots (y/n)?: ");
                         String addChoice = scanner.next();
                         addChoice = addChoice.toLowerCase();
 
-                        if (addChoice.equals("n") || addChoice.equals("no")) {
+                        if(addChoice.equals("n") || addChoice.equals("no")) {
                             isAdding = false;
                         }
                     }
 
-                    slotService.addSlotsForGym(gymId, newSlotList);
+                    slotService.addSlotsForGym(centerId, newSlotList);
                     break;
-                case 5:
-                    System.out.println("Going back to Previous menu");
+                case 4:
                     return;
                 default:
                     System.out.println("Invalid Option selected");
@@ -167,4 +144,6 @@ public class FlipfitGymOwnerMenu {
             }
         }
     }
+
+
 }

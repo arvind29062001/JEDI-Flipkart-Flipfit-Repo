@@ -1,41 +1,81 @@
 package com.flipfit.business;
-import com.flipfit.bean.Booking;
-import com.flipfit.bean.FlipfitCustomer;
-import com.flipfit.bean.FlipfitGym;
-import com.flipfit.bean.FlipfitGymSlot;
-import com.flipfit.business.FlipFitCustomerInterface;
-import java.util.ArrayList;
+
+import com.flipfit.bean.FlipFitBooking;
+import com.flipfit.bean.FlipFitCustomer;
+import com.flipfit.bean.FlipFitGymCenter;
+import com.flipfit.bean.FlipFitSlot;
+import com.flipfit.dao.FlipFitCustomerDAO;
+import com.flipfit.helper.UserPlan;
+
 import java.util.Date;
 import java.util.List;
-class FlipFitCustomerService implements FlipFitCustomerInterface {
-    @Override
-    public List<FlipfitGym> viewGym(String city) {
-        return List.of();
+
+public class FlipFitCustomerService implements FlipFitCustomerInterface {
+
+    private FlipFitGymCenterInterface gymCenterService = new FlipFitGymCenterService();
+    private FlipFitBookingInterface bookingService = new FlipFitBookingService();
+    private FlipFitScheduleInterface scheduleService = new FlipFitScheduleService();
+    private FlipFitSlotInterface slotService = new FlipFitSlotService();
+    private FlipFitCustomerDAO customerDAO = new FlipFitCustomerDAO();
+
+    public void registerCustomer(String username, String email, String password, String phoneNumber) {
+        try {
+            customerDAO.registerCustomer(username,password,email,phoneNumber);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
-    @Override
-    public List<FlipfitGymSlot> slotBooking(String centreID, Date date) {
-        return List.of();
+
+    public List<FlipFitGymCenter> getGymCentersListByCity(String city) {
+        return gymCenterService.getGymCentersByCity(city);
     }
-    @Override
-    public List<Booking> viewBooking(String customerId) {
-        return List.of();
+
+    public List<FlipFitSlot> getAvailableSlots(String centerId, Date date) {
+        return gymCenterService.getAvailableSlotsByCenterAndDate(centerId, date);
     }
-    @Override
-    public boolean bookSlot(String userID, Date date, String slotId, String centreId) {
+
+    public List<FlipFitBooking> getCustomerBookings(String customerId) {
+        return bookingService.getBookingListByCustomerId(customerId);
+    }
+
+    public boolean bookSlot(String username, Date date, String slotId, String centerId) {
+        if(!slotService.isSlotValid(slotId,centerId)){
+            System.out.println("INVALID SLOT");
+            return false;
+        }
+
+        String scheduleId = scheduleService.getOrCreateSchedule(slotId, date).getScheduleId();
+
+//        System.out.println("SCHEDULE ID: " + scheduleId);
+        //create booking
+        boolean isOverlap = bookingService.checkBookingOverlap(username,date,slotId);
+
+        if(isOverlap) {
+            System.out.println("There exists a conflicting booking, First cancel it!!!!");
+            return false;
+        }
+        bookingService.addBooking(username, scheduleId);
+        return true;
+    }
+
+    public void cancelBookingById(String bookingId) {
+        bookingService.cancelBooking(bookingId);
+    }
+
+    public FlipFitCustomer viewMyProfile(String username) {
+        return customerDAO.getCustomerByName(username);
+    }
+
+    public boolean isUserValid(String userName, String password) {
+        try {
+            return customerDAO.isUserValid(userName,password);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         return false;
     }
-    @Override
-    public void cancelSlot(String bookingID) {
-    }
-    @Override
-    public void register(String userName, String password, String email, String phoneNumber, String cardNumber) {
-    }
-    @Override
-    public FlipfitCustomer checkStatus(String userId, String gymId, String startTime) {
-        return null;
-    }
-    @Override
-    public boolean login(String userName, String password) {
-        return false;
+
+    public List<UserPlan> getCustomerPlan(String customerId){
+        return bookingService.getCustomerPlan(customerId);
     }
 }

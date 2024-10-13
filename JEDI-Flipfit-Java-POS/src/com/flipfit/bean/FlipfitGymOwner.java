@@ -1,50 +1,33 @@
 package com.flipfit.bean;
 
-public class FlipfitGymOwner extends Person{
+import java.util.List;
 
+public class FlipFitGymOwner extends Person {
+    private String govId;
+    private List<String> gymCenterIdList;
 
-   private String uniqueIdProof;
-   private String gstNumber;
+    public FlipFitGymOwner(String id, String name, String email, String password, String govId) {
+        super(id, name, email, password, FlipFitRole.GYM_OWNER);
+        this.govId = govId;
+    }
 
-   public FlipfitGymOwner(String userId, String userName, String email, String password, String customerPhone,String unique_id_proof,String uniqueIdProof,String gstNumber) {
-      super(userName,email,customerPhone,userId,password);
-      this.uniqueIdProof=uniqueIdProof;
-      this.gstNumber=gstNumber;
-   }
+    public String getGovId() {
+        return this.govId;
+    }
 
-   // Getter & Setter
-   public String getUniqueIdProof() {
-      return uniqueIdProof;
-   }
+    public List<String> getGymCenterIdList() {
+        return this.gymCenterIdList;
+    }
 
-   public void setUniqueIdProof(String uniqueIdProof) {
-      this.uniqueIdProof = uniqueIdProof;
-   }
+    public void SetGovId(String govId) {
+        this.govId = govId;
+    }
 
-   public String getGstNumber() {
-      return gstNumber;
-   }
+    public void setGymCenterIdList(List<String> gymCenterIdList) {
+        this.gymCenterIdList = gymCenterIdList;
+    }
 
-   public void setGstNumber(String gstNumber) {
-      this.gstNumber = gstNumber;
-   }
-
-   public FlipfitGymOwner(String userId, String userName, String email, String password, String customerPhone,String unique_id_proof) {
-      super(userName,email,customerPhone,userId,password);
-   }
-
-//
-//   //Method
-//
-//   public void registerGym(){
-//
-//   }
-//
-//   public void updateSlot(){
-//
-//
-//   }
-
-
-
+    public void addGymCenterId(String gymCenterId) {
+        this.gymCenterIdList.add(gymCenterId);
+    }
 }

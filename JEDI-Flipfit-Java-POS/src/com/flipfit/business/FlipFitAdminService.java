@@ -1,39 +1,26 @@
 package com.flipfit.business;
 
-import com.flipfit.bean.FlipfitGym;
-import com.flipfit.bean.FlipfitGymOwner;
+import com.flipfit.bean.FlipFitGymCenter;
+import com.flipfit.dao.FlipFitAdminDAO;
 
 import java.util.List;
 
 public class FlipFitAdminService implements FlipFitAdminInterface {
+    FlipFitAdminDAO flipFitAdminDAO = new FlipFitAdminDAO();
 
-    @Override
-    public void approveGym(String gymId) {
-        // Implementation logic here
+    public void approveGymCenter(String gymCenterId, boolean isApproved) {
+        flipFitAdminDAO.validateGymCenter(gymCenterId, isApproved);
     }
 
-    @Override
-    public void cancelApproval(String gymId) {
-        // Implementation logic here
+    public List<FlipFitGymCenter> getPendingGymCentersList() {
+        return flipFitAdminDAO.getPendingGymCentersList();
     }
 
-    @Override
-    public void editAdminProfile(String gymOwnerId, FlipfitGymOwner updatedProfile) {
-        // Implementation logic here
+    public List<FlipFitGymCenter> getAllGymCentersList() {
+        return flipFitAdminDAO.getAllGymCentersList();
     }
 
-    @Override
-    public List<FlipfitGym> viewApprovedGyms() {
-        return List.of(); // Return an empty list for now
-    }
-
-    @Override
-    public List<FlipfitGym> viewPendingGyms() {
-        return List.of(); // Return an empty list for now
-    }
-
-    @Override
-    public List<FlipfitGym> search(String gymId) {
-        return List.of(); // Return an empty list for now
+    public void removeGymCenter(String gymCenterId) {
+        flipFitAdminDAO.removeGymCenter(gymCenterId);
     }
 }

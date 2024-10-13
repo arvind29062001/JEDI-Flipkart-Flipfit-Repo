@@ -1,63 +1,109 @@
 package com.flipfit.client;
+
+import com.flipfit.bean.FlipFitGymCenter;
+import com.flipfit.business.FlipFitAdminInterface;
+import com.flipfit.business.FlipFitAdminService;
+import static com.flipfit.helper.Helper.*;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Scanner;
 
-public class FlipfitAdminMenu {
-    public Scanner scanner = new Scanner(System.in);
-    public boolean adminLogin(String userName, String password) {
-        System.out.println("Admin login here");
-        return true;
-    }
+public class FlipFitAdminMenu {
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final FlipFitAdminInterface adminService = new FlipFitAdminService();
 
-    public void updatePassword(String email,String oldPassword,String newPassword){
-        System.out.println("Password updated successfully");
-    }
+    private void handleGymCenterApprovalRequests() {
+        System.out.println("Enter the gym Id or enter -1 to exit\n");
 
-    public void handleGymCentreApprovalRequests(){
-        System.out.println("Gym centre approval requests here");
-
-        System.out.println("Press 0 to Exit or Choose the Gym Centre To Modify:");
         String requestGymCenterId = scanner.next();
-        if (requestGymCenterId.equals("0")) return;
-//            Now Admin will select an request and we will pop up with two
-        System.out.println("1. Approve the request\n2. Reject the request\n");
+
+        if (requestGymCenterId.equals("-1")) return;
+
+        System.out.println("""
+                1. Approve the request
+                2. Reject the request""");
+
         int choice = scanner.nextInt();
-        if(choice == 1){
-            System.out.println("Approved Gym Centre");
+
+        if(choice == 1) {
+            adminService.approveGymCenter(requestGymCenterId, true);
+            System.out.println("Approved Gym Centre " + requestGymCenterId);
         } else if (choice == 2) {
-            System.out.println("Rejected Gym Centre Request");
+            adminService.approveGymCenter(requestGymCenterId, false);
+            System.out.println("Rejected Gym Centre" + requestGymCenterId);
+        } else {
+            System.out.println("Invalid choice ⚠️");
+            return;
         }
     }
 
-    public void adminClientMainPage(){
-        System.out.println("Welcome to Flipfit application :-->");
+    private void handleGymCenterRemoval() {
+        System.out.println("Enter the gym Id or enter -1 to exit\n");
+        String requestGymCenterId = scanner.next();
+        adminService.removeGymCenter(requestGymCenterId);
+        System.out.println("Removed Gym Center " + requestGymCenterId);
+    }
 
-        while(true){
-            System.out.println(
-                    "1. view all gym owners\n" +
-                            "2. view all gym centres\n" +
-                            "3. remove gym centre\n" +
-                            "4. view list of pending request to add gym\n" +
-                            "5. Go Back to Previous Menu"
-            );
+    public void adminClientMainPage() {
+        while(true) {
+            LocalDateTime currentTime = LocalDateTime.now();
+            DateTimeFormatter myFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+            String formattedDate = currentTime.format(myFormat);
+            System.out.println("""
+                Welcome ADMIN to FlipFit Application
+                ⏱️ Login Time:\s""" + formattedDate + "\n");
 
-            int pendingChoice = scanner.nextInt();
+            System.out.println("""
+                    1. View pending gym requests
+                    2. Approve/Reject gym requests
+                    3. Remove gym center
+                    4. View all gyms
+                    5. Go back to previous menu
+                    """);
+
+            String pendingChoice = scanner.next();
+
             switch (pendingChoice) {
-                case 1:
-                    System.out.println("all gym owners displayed");
-                    break;
-                case 2:
-                    System.out.println("all gym centres displayed");
-                    break;
-                case 3:
-                    System.out.println("gym centre removed");
+                case "1":
+                    List<FlipFitGymCenter> pendingGymCentersList = adminService.getPendingGymCentersList();
+                    if (pendingGymCentersList.isEmpty()) {
+                        System.out.println("""
+                                ===========================================
+                                ✅ No pending gym centers found...
+                                ===========================================
+                                """);
+                    } else {
+                        printGymCenters(pendingGymCentersList);
+                    }
                     break;
 
-                case 4:
-                    System.out.println("all pending requests displayed");
+                case "2":
+                    handleGymCenterApprovalRequests();
                     break;
-                case 5:
+
+                case "3":
+                    handleGymCenterRemoval();
+                    break;
+
+                case "4":
+                    List<FlipFitGymCenter> allGymCenters = adminService.getAllGymCentersList();
+                    printGymCenters(allGymCenters);
+                    break;
+
+                case "5":
                     return;
+
+                default:
+                    System.out.println("Invalid choice ⚠️, try again");
+                    break;
             }
         }
+    }
+
+    public void adminLogin(String username, String password) {
+        System.out.println("✅ Successfully logged in as ADMIN...\n");
+        adminClientMainPage();
     }
 }

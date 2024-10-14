@@ -37,35 +37,38 @@ public class FlipFitCustomerMenu {
         System.out.println("Provide Location to search : ");
         String location = scanner.next();
         List<FlipFitGymCenter> centreListByLocation = customerService.getGymCentersListByCity(location);
-        printGymCenters(centreListByLocation);
+
         if(centreListByLocation.isEmpty()){
             System.out.println("There are no available GYM Centres in " + location + ". Please Select some other location");
             bookSlotSubMenu(userName);
             return;
+        } else {
+            printGymCenters(centreListByLocation);
+            System.out.print("Choose a gymCentre ID to proceed: ");
+            String chosenGym = scanner.next();
+            Date date = selectDate();
+            System.out.println(1);
+            chooseSlot(chosenGym,userName,date,chosenGym);
         }
-        System.out.print("Choose a gymCentre ID to proceed: ");
-        String chosenGym = scanner.next();
-        Date date = selectDate();
-        System.out.println(1);
-        chooseSlot(chosenGym,userName,date,chosenGym);
     }
 
     private void chooseSlot(String gymCentreId, String userName, Date sqlDate, String centreId) {
         System.out.println("Choose from the Below Slots");
         System.out.println(2);
         List<FlipFitSlot> availableSlots = customerService.getAvailableSlots(gymCentreId,sqlDate);
-        printSlots(availableSlots);
+
         if(availableSlots.isEmpty()){
             System.out.println("There are no available slots in the " + gymCentreId + ". Please Select some other gym");
             bookSlotSubMenu(userName);
             return;
+        } else {
+            printSlots(availableSlots);
+            System.out.println("Enter SlotID");
+            String slotID = scanner.next();
+            System.out.println(slotID);
+
+            if(!customerService.bookSlot(userName, sqlDate, slotID, centreId)) chooseSlot(gymCentreId, userName, sqlDate,centreId);
         }
-        System.out.println("Enter SlotID");
-        String slotID = scanner.next();
-        System.out.println(slotID);
-
-
-        if(!customerService.bookSlot(userName, sqlDate, slotID, centreId)) chooseSlot(gymCentreId, userName, sqlDate,centreId);
     }
 
     private void printbookingsSubMenu(String userName){

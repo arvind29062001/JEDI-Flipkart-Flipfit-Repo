@@ -49,7 +49,6 @@ public class FlipFitSlotDAO implements FlipFitSlotDAOInterface{
                 slotList.add(new FlipFitSlot(slotId, gymCenterId, slotTime));
 
             }
-            System.out.println(slotList);
         } catch(SQLException e) {
             System.out.println(e.getMessage());
         }

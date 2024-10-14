@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3fff28e-adcb-4950-9e3a-86dd49067e06" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/bean/FlipFitSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/bean/FlipFitSchedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/bean/FlipFitSlot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/bean/FlipFitSlot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/business/FlipFitScheduleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/business/FlipFitScheduleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/client/FlipFitApplicationMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/client/FlipFitApplicationMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/client/FlipFitCustomerMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/client/FlipFitCustomerMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/constant/SQLConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/constant/SQLConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/dao/FlipFitBookingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/dao/FlipFitBookingDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/dao/FlipFitCustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/dao/FlipFitCustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/dao/FlipFitScheduleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/dao/FlipFitScheduleDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/dao/FlipFitSlotDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/dao/FlipFitSlotDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/helper/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JEDI-Flipfit-Java-POS/com/flipfit/helper/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitSlot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/FlipfitAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/FlipfitCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitScheduleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipFitApplicationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipFitApplicationMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipFitCustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipFitCustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitAdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipFitAdminMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitGymOwnerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipFitGymOwnerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/constant/SQLConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/constant/SQLConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/dao/FlipFitBookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/dao/FlipFitBookingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/dao/FlipFitCustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/dao/FlipFitCustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/dao/FlipFitScheduleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/dao/FlipFitScheduleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/dao/FlipFitSlotDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/dao/FlipFitSlotDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/helper/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/helper/DatabaseConnection.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nQ0MdkrhMqNqD1rdWghWJmIpSY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FlipFitApplicationMenu.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/racharla.raviteja/Desktop/JEDI-Flipkart-Flipfit-Repo/JEDI-Flipfit-Java-POS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3fff28e-adcb-4950-9e3a-86dd49067e06" name="Changes" comment="" />
+      <created>1728889947575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728889947575</updated>
+      <workItem from="1728889948693" duration="115000" />
+      <workItem from="1728891178828" duration="6016000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

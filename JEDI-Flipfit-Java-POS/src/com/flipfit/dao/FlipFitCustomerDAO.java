@@ -2,6 +2,7 @@ package com.flipfit.dao;
 
 import com.flipfit.bean.FlipFitCustomer;
 import com.flipfit.bean.FlipFitRole;
+import com.flipfit.bean.Person;
 import com.flipfit.constant.SQLConstants;
 import com.flipfit.helper.DatabaseConnection;
 
@@ -59,6 +60,30 @@ public class FlipFitCustomerDAO implements FlipFitCustomerDAOInterface {
         }
         return false;
     }
+
+    public Person getPersonByName(String name) {
+        try {
+            Connection conn = DatabaseConnection.connect();
+            PreparedStatement ps = conn.prepareStatement(SQLConstants.GET_PERSON_BY_NAME);
+            ps.setString(1, name);
+            ResultSet rs = ps.executeQuery();
+            rs.next();
+            Person person = new Person(
+                    rs.getString("id"),
+                    rs.getString("name"),
+                    rs.getString("email"),
+                    rs.getString("password"),
+                    FlipFitRole.values()[rs.getInt("role_id")]
+            );
+            ps.close();
+            return person;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
+
+
 
     public FlipFitCustomer getCustomerByName(String name) {
         try {

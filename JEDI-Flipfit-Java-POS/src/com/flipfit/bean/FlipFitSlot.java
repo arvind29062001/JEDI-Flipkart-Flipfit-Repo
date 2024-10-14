@@ -37,4 +37,13 @@ public class FlipFitSlot {
     public void setSlotTime(LocalTime slotTime) {
         this.slotTime = slotTime;
     }
+
+    @Override
+    public String toString() {
+        return "FlipFitSlot{" +
+                "slotId='" + slotId + '\'' +
+                ", gymCenterId='" + gymCenterId + '\'' +
+                ", slotTime=" + slotTime +
+                '}';
+    }
 }

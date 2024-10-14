@@ -1,16 +1,17 @@
 package com.flipfit.bean;
 
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.UUID;
 
 public class FlipFitSchedule {
     private String scheduleId;
     private String slotId;
     private int availability;
-    private LocalDate date;
+    private Date date;
 
 
-    public FlipFitSchedule(LocalDate date, String slotId, int availability) {
+    public FlipFitSchedule(Date date, String slotId, int availability) {
         this.scheduleId = UUID.randomUUID().toString();
         this.date = date;
         this.slotId = slotId;
@@ -29,7 +30,7 @@ public class FlipFitSchedule {
         return availability;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
@@ -45,7 +46,7 @@ public class FlipFitSchedule {
         this.availability = availability;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

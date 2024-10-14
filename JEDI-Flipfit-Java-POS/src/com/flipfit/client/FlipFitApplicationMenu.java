@@ -18,7 +18,7 @@ public class FlipFitApplicationMenu {
             System.out.println("""
                     Enter you role
                     1) ADMIN
-                    2) GYM_OWNER
+                    2) GYM OWNER
                     3) CUSTOMER
                     """);
 
@@ -37,7 +37,7 @@ public class FlipFitApplicationMenu {
                     customerClient.customerLogin(username, password);
                     break;
                 default:
-                    System.out.println("Invalid role ⚠️, try again");
+                    System.out.println("⚠️ Invalid role, please try again!");
                     break;
             }
     }
@@ -51,16 +51,16 @@ public class FlipFitApplicationMenu {
     }
 
     private static void updatePassword() {
-        System.out.println("Updating the password...");
+        System.out.println("🪪 Updating the password...\n");
     }
 
     private static void applicationMenu() {
         while(true) {
             System.out.println("""
                 1. Login
-                2. Registration of the customer
-                3. Registration of the gym owner
-                4. Update password
+                2. Customer Registration
+                3. Gym Owner Registration
+                4. Update Password
                 5. Exit
                 """);
             String choice = scanner.next();

@@ -20,9 +20,8 @@ public class FlipFitScheduleService implements FlipFitScheduleInterface {
         try {
             String centreID = slotService.getSlotById(slotId).getGymCenterId();
             int availability = gymCenterService.getGymCenterById(centreID).getCapacity();
-            FlipFitSchedule schedule = new FlipFitSchedule(date.toInstant()
-                    .atZone(ZoneId.systemDefault())
-                    .toLocalDate(), slotId, availability);
+            FlipFitSchedule schedule = new FlipFitSchedule(date, slotId, availability);
+            flipFitScheduleDAO.addSchedule(schedule);
             System.out.println("schedule created");
             return schedule;
         } catch (Exception e) {
@@ -62,6 +61,9 @@ public class FlipFitScheduleService implements FlipFitScheduleInterface {
         System.out.println(5);
         List<FlipFitSlot> allSlotsOfThatCentre = slotService.getAllSlotsByGymCenter(centerId);
         List<FlipFitSlot> response = slotService.getAllSlotsByGymCenter(centerId);
+        for(FlipFitSlot slot : allSlotsOfThatCentre){
+            System.out.println(slot.toString());
+        }
         for(FlipFitSlot slot: allSlotsOfThatCentre){
             for(FlipFitSchedule schedule: flipFitScheduleDAO.getScheduleListByDate(date)){
                 if (slotService.getSlotById(schedule.getSlotId()).getGymCenterId().equals(centerId)){
@@ -81,7 +83,7 @@ public class FlipFitScheduleService implements FlipFitScheduleInterface {
     public FlipFitSchedule getOrCreateSchedule(String slotId, Date date) {
         FlipFitSchedule schedule = getScheduleByDateAndSlotId(date, slotId);
         if( schedule == null ){
-            return createSchedule(date,slotId);
+            return createSchedule(date, slotId);
         }
         return schedule;
     }

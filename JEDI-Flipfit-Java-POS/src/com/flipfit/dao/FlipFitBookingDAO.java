@@ -1,28 +1,42 @@
 package com.flipfit.dao;
 
 import com.flipfit.bean.FlipFitBooking;
+import com.flipfit.bean.FlipFitCustomer;
 import com.flipfit.bean.FlipFitSchedule;
+import com.flipfit.bean.Person;
+import com.flipfit.constant.SQLConstants;
+import com.flipfit.helper.DatabaseConnection;
 import com.flipfit.helper.UserPlan;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.time.Instant;
 import java.time.LocalTime;
 import java.time.ZoneId;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+
 
 public class FlipFitBookingDAO implements FlipFitBookingDAOInterface {
-    private List<FlipFitBooking> bookingList = new ArrayList<>();
-    private static FlipFitScheduleDAO flipFitScheduleDAO = new FlipFitScheduleDAO();
+    private final List<FlipFitBooking> bookingList = new ArrayList<>();
+    private static final FlipFitScheduleDAO flipFitScheduleDAO = new FlipFitScheduleDAO();
+    private static final FlipFitBookingDAO flipFitBookingDAO = new FlipFitBookingDAO();
+    private static final FlipFitCustomerDAO flipFitCustomerDAO = new FlipFitCustomerDAO();
 
     public void addBooking(String name, String scheduleId) {
         try {
-            String bookingId = name + scheduleId;
+            Person person = flipFitCustomerDAO.getPersonByName(name);
+            String bookingId = UUID.randomUUID().toString();
             FlipFitBooking booking = new FlipFitBooking(bookingId, name, scheduleId);
             bookingList.add(booking);
+            Connection conn = DatabaseConnection.connect();
+            PreparedStatement ps = conn.prepareStatement(SQLConstants.ADD_BOOKING);
+            ps.setString(1, bookingId);
+            ps.setString(2, person.getId());
+            ps.setString(3, scheduleId);
+            ps.executeUpdate();
             System.out.println("Booking added successfully");
         } catch (Exception e) {
-            System.out.println("Booking failed for current slot. Try again later.");
+            System.out.println(e.getMessage());
         }
     }
 
@@ -45,9 +59,13 @@ public class FlipFitBookingDAO implements FlipFitBookingDAOInterface {
                 UserPlan userPlan = new UserPlan(
                         schedule.getSlotId(),
                         schedule.getSlotId(),
-                        schedule.getDate().atStartOfDay().toLocalTime(),
+                        Instant.ofEpochMilli(schedule.getDate().getTime())
+                                .atZone(ZoneId.systemDefault())
+                                .toLocalTime(),
                         schedule.getScheduleId(),
-                        schedule.getDate()
+                        Instant.ofEpochMilli(schedule.getDate().getTime())
+                                .atZone(ZoneId.systemDefault())
+                                .toLocalDate()
                 );
                 allUserPlan.add(userPlan);
             }
@@ -78,10 +96,20 @@ public class FlipFitBookingDAO implements FlipFitBookingDAOInterface {
 
         if (bookingToRemove.isPresent()) {
             bookingList.remove(bookingToRemove.get());
-            System.out.println("Booking canceled successfully");
+            try {
+                Connection conn = DatabaseConnection.connect();
+                PreparedStatement ps = conn.prepareStatement(SQLConstants.CANCEL_BOOKING_BY_ID);
+                ps.setString(1, bookingID);
+                ps.executeUpdate();
+                System.out.println("Booking cancelled successfully");
+            } catch (Exception e) {
+                System.out.println("Failed to cancel");
+            }
         } else {
             System.out.println("Could not cancel booking for BookingId: " + bookingID);
         }
+
+
     }
 
     public FlipFitBooking getBookingByBookingId(String bookingId) {

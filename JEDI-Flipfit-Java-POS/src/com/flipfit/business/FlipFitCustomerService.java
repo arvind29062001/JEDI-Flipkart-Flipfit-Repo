@@ -6,6 +6,8 @@ import com.flipfit.bean.FlipFitGymCenter;
 import com.flipfit.bean.FlipFitSlot;
 import com.flipfit.dao.FlipFitCustomerDAO;
 import com.flipfit.helper.UserPlan;
+import com.flipfit.exceptions.RegistrationFailedException;
+import com.flipfit.exceptions.UserInvalidException;
 
 import java.util.Date;
 import java.util.List;
@@ -21,7 +23,7 @@ public class FlipFitCustomerService implements FlipFitCustomerInterface {
     public void registerCustomer(String username, String email, String password, String phoneNumber,String govId) {
         try {
             customerDAO.registerCustomer(username,password,email,phoneNumber,govId);
-        } catch (Exception e) {
+        } catch (RegistrationFailedException e) {
             System.out.println(e.getMessage());
         }
     }
@@ -49,6 +51,7 @@ public class FlipFitCustomerService implements FlipFitCustomerInterface {
 
 //        System.out.println("SCHEDULE ID: " + scheduleId);
         //create booking
+
         boolean isOverlap = bookingService.checkBookingOverlap(username,date,slotId);
 
         if(isOverlap) {
@@ -70,7 +73,7 @@ public class FlipFitCustomerService implements FlipFitCustomerInterface {
     public boolean isUserValid(String userName, String password) {
         try {
             return customerDAO.isUserValid(userName,password);
-        } catch (Exception e) {
+        } catch (UserInvalidException e) {
             System.out.println(e.getMessage());
         }
         return false;

@@ -2,8 +2,12 @@ package com.flipfit.dao;
 
 import com.flipfit.bean.FlipFitCustomer;
 import com.flipfit.bean.FlipFitRole;
+import com.flipfit.bean.Person;
 import com.flipfit.constant.SQLConstants;
 import com.flipfit.helper.DatabaseConnection;
+
+import com.flipfit.exceptions.RegistrationFailedException;
+import com.flipfit.exceptions.UserInvalidException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,7 +17,7 @@ import java.util.UUID;
 
 public class FlipFitCustomerDAO implements FlipFitCustomerDAOInterface {
 
-    public void registerCustomer(String name, String email, String password, String phoneNumber,String govId) {
+    public void registerCustomer(String name, String email, String password, String phoneNumber,String govId) throws RegistrationFailedException{
         try {
             Connection conn = DatabaseConnection.connect();
             conn.setAutoCommit(false);
@@ -37,12 +41,37 @@ public class FlipFitCustomerDAO implements FlipFitCustomerDAOInterface {
             conn.commit();
             ps.close();
         } catch(SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RegistrationFailedException("Failed to register the user. Try again.");
+        }catch (Exception e) {
+            System.out.println("Oops! An error occurred. Try again later.");
         }
+
 
     }
 
-    public boolean isUserValid(String name, String password) {
+    public Person getPersonByName(String name) {
+        try {
+            Connection conn = DatabaseConnection.connect();
+            PreparedStatement ps = conn.prepareStatement(SQLConstants.GET_PERSON_BY_NAME);
+            ps.setString(1, name);
+            ResultSet rs = ps.executeQuery();
+            rs.next();
+            Person person = new Person(
+                    rs.getString("id"),
+                    rs.getString("name"),
+                    rs.getString("email"),
+                    rs.getString("password"),
+                    FlipFitRole.values()[rs.getInt("role_id")]
+            );
+            ps.close();
+            return person;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
+
+    public boolean isUserValid(String name, String password) throws UserInvalidException{
         try {
             Connection conn = DatabaseConnection.connect();
             PreparedStatement ps = conn.prepareStatement(SQLConstants.CUSTOMER_LOGIN_QUERY);

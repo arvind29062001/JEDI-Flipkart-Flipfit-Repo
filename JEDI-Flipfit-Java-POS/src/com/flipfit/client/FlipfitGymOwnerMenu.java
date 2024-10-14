@@ -27,6 +27,7 @@ public class FlipFitGymOwnerMenu {
             System.out.println("Gym  owner logged in");
             gymOwnerClientMainPage(gymOwner);
         } else {
+            System.out.println("Invalid Credentials! Try again!");
             return false;
         }
         return true;

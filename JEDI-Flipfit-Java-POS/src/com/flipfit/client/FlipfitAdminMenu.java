@@ -34,7 +34,7 @@ public class FlipFitAdminMenu {
             adminService.approveGymCenter(requestGymCenterId, false);
             System.out.println("Rejected Gym Centre" + requestGymCenterId);
         } else {
-            System.out.println("Invalid choice ⚠️");
+            System.out.println("Invalid choice ");
             return;
         }
     }
@@ -53,7 +53,7 @@ public class FlipFitAdminMenu {
             String formattedDate = currentTime.format(myFormat);
             System.out.println("""
                 Welcome ADMIN to FlipFit Application
-                ⏱️ Login Time:\s""" + formattedDate + "\n");
+                 Login Time:\s""" + formattedDate + "\n");
 
             System.out.println("""
                     1. View pending gym requests
@@ -71,7 +71,7 @@ public class FlipFitAdminMenu {
                     if (pendingGymCentersList.isEmpty()) {
                         System.out.println("""
                                 ===========================================
-                                ✅ No pending gym centers found...
+                                 No pending gym centers found...
                                 ===========================================
                                 """);
                     } else {
@@ -96,14 +96,18 @@ public class FlipFitAdminMenu {
                     return;
 
                 default:
-                    System.out.println("Invalid choice ⚠️, try again");
+                    System.out.println("Invalid choice , try again");
                     break;
             }
         }
     }
 
     public void adminLogin(String username, String password) {
-        System.out.println("✅ Successfully logged in as ADMIN...\n");
+        if(username.equals("Ravi") && password.equals("Teja")) System.out.println(" Successfully logged in as ADMIN...\n");
+        else {
+            System.out.println("Invalid Credentials!");
+            return ;
+        }
         adminClientMainPage();
     }
 }

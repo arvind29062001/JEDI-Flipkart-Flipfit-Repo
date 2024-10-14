@@ -24,7 +24,7 @@ public class FlipFitApplicationMenu {
 
             String roleChoice = scanner.next();
 
-            System.out.println("\n⏱️ Authenticating...\n");
+            System.out.println("\n Authenticating \n");
 
             switch(roleChoice) {
                 case "1":
@@ -37,7 +37,7 @@ public class FlipFitApplicationMenu {
                     customerClient.customerLogin(username, password);
                     break;
                 default:
-                    System.out.println("Invalid role ⚠️, try again");
+                    System.out.println("Invalid role , try again");
                     break;
             }
     }
@@ -78,17 +78,17 @@ public class FlipFitApplicationMenu {
                     updatePassword();
                     break;
                 case "5":
-                    System.out.println("🙏 Thank you, Exiting...\n");
+                    System.out.println(" Thank you, Exiting \n");
                     return;
                 default:
-                    System.out.println("⚠️ Invalid choice, please try again\n");
+                    System.out.println(" Invalid choice, please try again\n");
                     break;
             }
         }
     }
 
     public static void main(String[] args) {
-        System.out.println("\n-----   Welcome to FlipFit Application  -----");
+        System.out.println("\n   Welcome to FlipFit Application  ");
         applicationMenu();
     }
 }

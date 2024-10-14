@@ -4,8 +4,6 @@ import com.flipfit.bean.FlipFitSchedule;
 import com.flipfit.bean.FlipFitSlot;
 import com.flipfit.dao.FlipFitSlotDAO;
 
-import java.time.LocalTime;
-import java.util.ArrayList;
 import java.util.List;
 
 public class FlipFitSlotService implements FlipFitSlotInterface {
@@ -21,18 +19,18 @@ public class FlipFitSlotService implements FlipFitSlotInterface {
     }
 
     public List<FlipFitSlot> getSlotList() {
-       return flipFitSlotDAO.getSlotList();
+        return flipFitSlotDAO.getSlotList();
     }
 
     public void addSlotsForGym(String gymCenterId, List<FlipFitSlot> slotList) {
-        for(FlipFitSlot slot : slotList) {
+        slotList.forEach(slot -> {
             slot.setGymCenterId(gymCenterId);
             flipFitSlotDAO.addSlot(slot);
-        }
+        });
     }
 
     public boolean isSlotValid(String slotID, String centerId) {
-        return true;
+        return true; // Implement validation logic as needed
     }
 
     public FlipFitSlot getSlotByIdAndGymCenterId(String slotID, String centerId) {

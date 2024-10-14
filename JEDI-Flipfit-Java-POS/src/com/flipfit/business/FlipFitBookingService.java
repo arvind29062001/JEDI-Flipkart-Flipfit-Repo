@@ -4,6 +4,7 @@ import com.flipfit.bean.FlipFitBooking;
 import com.flipfit.bean.FlipFitSlot;
 import com.flipfit.dao.FlipFitBookingDAO;
 import com.flipfit.helper.UserPlan;
+import com.flipfit.exceptions.BookingFailedException;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -23,8 +24,9 @@ public class FlipFitBookingService implements FlipFitBookingInterface {
                 return;
             }
             bookingDAO.addBooking(userName, scheduleID);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        } catch (BookingFailedException e) {
+            System.out.println("Failed to add booking");
+
         }
     }
 
@@ -36,7 +38,7 @@ public class FlipFitBookingService implements FlipFitBookingInterface {
     public List<FlipFitBooking> getBookingListByCustomerId(String customerId){
         try {
             return bookingDAO.getBookingsListByCustomerId(customerId);
-        } catch (Exception e) {
+        } catch (BookingFailedException e) {
             System.out.println("Failed to get booking");
         }
         return null;
@@ -51,7 +53,7 @@ public class FlipFitBookingService implements FlipFitBookingInterface {
             FlipFitBooking booking  = bookingDAO.getBookingByBookingId(bookingID);
             bookingDAO.cancelBookingById(bookingID);
             scheduleService.modifySchedule(booking.getScheduleId(),1);
-        } catch (Exception e) {
+        } catch (BookingFailedException e) {
             System.out.println("Failed to cancel booking");
         }
     }

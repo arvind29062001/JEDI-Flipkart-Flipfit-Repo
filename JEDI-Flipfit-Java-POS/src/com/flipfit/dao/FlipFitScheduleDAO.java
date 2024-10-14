@@ -20,12 +20,13 @@ public class FlipFitScheduleDAO implements FlipFitScheduleDAOInterface {
             Connection conn = DatabaseConnection.connect();
             PreparedStatement ps = conn.prepareStatement(SQLConstants.ADD_SCHEDULE);
             ps.setString(1, schedule.getScheduleId());
-            ps.setString(2, schedule.getDate().toString());
-            ps.setString(3, schedule.getSlotId());
-            ps.setInt(4, schedule.getAvailability());
+            ps.setString(2, schedule.getSlotId());
+            ps.setInt(3, schedule.getAvailability());
+            Date date = schedule.getDate();
+            ps.setDate(4, new java.sql.Date(date.getTime()));
             ps.executeUpdate();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
         }
     }
 
@@ -39,13 +40,11 @@ public class FlipFitScheduleDAO implements FlipFitScheduleDAOInterface {
             while(rs.next()) {
                 String slotId = rs.getString("slotId");
                 int availability = rs.getInt("availability");
-                String date = rs.getString("date");
-                LocalDate localDate = LocalDate.parse(date);
-                schedule = new FlipFitSchedule(localDate, slotId, availability);
-                schedule.setScheduleId(scheduleId);
+                Date date = rs.getDate("date");
+                schedule = new FlipFitSchedule(date, slotId, availability);
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
         }
         return schedule;
     }
@@ -55,27 +54,33 @@ public class FlipFitScheduleDAO implements FlipFitScheduleDAOInterface {
         try {
             Connection conn = DatabaseConnection.connect();
             PreparedStatement ps = conn.prepareStatement(SQLConstants.GET_SCHEDULES_BY_DATE);
-            ps.setString(1, date.toString());
+            ps.setDate(1, new java.sql.Date(date.getTime()));
             ResultSet rs = ps.executeQuery();
             System.out.println(date.toString());
             while(rs.next()) {
                 String slotId = rs.getString("slotId");
                 int availability = rs.getInt("availability");
                 String scheduleId = rs.getString("scheduleId");
-                LocalDate localDate = LocalDate.parse(date.toString());
-                FlipFitSchedule schedule = new FlipFitSchedule(localDate, slotId, availability);
+                FlipFitSchedule schedule = new FlipFitSchedule(date, slotId, availability);
                 schedule.setScheduleId(scheduleId);
                 schedules.add(schedule);
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
+
         }
         return schedules;
     }
 
     public boolean modifySchedule(String scheduleId, int action) {
         try {
-            int availability = getScheduleById(scheduleId).getAvailability();
+            FlipFitSchedule schedule = getScheduleById(scheduleId);
+            int availability = 0;
+
+            if (schedule!=null) {
+                availability = schedule.getAvailability();
+            }
+
             if(availability < 1 && action == -1) {
                 return false;
             }
@@ -85,7 +90,7 @@ public class FlipFitScheduleDAO implements FlipFitScheduleDAOInterface {
             ps.setString(2, scheduleId);
             ps.executeUpdate();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
         }
         return true;
     }

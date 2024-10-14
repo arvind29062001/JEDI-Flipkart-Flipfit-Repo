@@ -9,6 +9,7 @@ public class SQLConstants {
     public static final String CUSTOMER_LOGIN_QUERY = "SELECT * FROM FlipFit.Persons WHERE name=? AND password=?;";
     public static final String ADD_NEW_CUSTOMER = "INSERT INTO FlipFit.FlipFitCustomers (person_id, phoneNumber,govId) VALUES (?, ?,?);";
     public static final String GET_CUSTOMER_BY_NAME = "SELECT * FROM FlipFit.FlipFitCustomers WHERE name=?;";
+    public static final String GET_PERSON_BY_NAME = "SELECT * FROM FlipFit.Persons WHERE name=?;";
 
 //    Gym Owner
     public static final String REGISTER_GYM_OWNER = "INSERT INTO FlipFit.FlipFitGymOwners (person_id, govId) VALUES (?, ?);";

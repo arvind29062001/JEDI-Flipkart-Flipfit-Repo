@@ -26,7 +26,7 @@ public class FlipFitSlotDAO implements FlipFitSlotDAOInterface{
                 slotList.add(new FlipFitSlot(slotId, gymCenterId, slotTime));
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
         }
         return slotList;
     }
@@ -49,9 +49,8 @@ public class FlipFitSlotDAO implements FlipFitSlotDAOInterface{
                 slotList.add(new FlipFitSlot(slotId, gymCenterId, slotTime));
 
             }
-            System.out.println(slotList);
         } catch(SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
         }
         return slotList;
     }
@@ -65,7 +64,8 @@ public class FlipFitSlotDAO implements FlipFitSlotDAOInterface{
             ps.setTime(3, java.sql.Time.valueOf(slot.getSlotTime()));
             ps.executeUpdate();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
+
         }
     }
 
@@ -82,7 +82,11 @@ public class FlipFitSlotDAO implements FlipFitSlotDAOInterface{
                 slot = new FlipFitSlot(slotId, gymCenterId, slotTime);
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
+        }
+        if(slot==null){
+            System.out.println("slot is null");
+            return new FlipFitSlot("-1","-1",LocalTime.now());
         }
         return slot;
     }
@@ -100,7 +104,7 @@ public class FlipFitSlotDAO implements FlipFitSlotDAOInterface{
                 slot = new FlipFitSlot(slotId, rs.getString("gymCenterId"), slotTime);
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
         }
         return slot;
     }

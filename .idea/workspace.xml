@@ -4,10 +4,6 @@
     <list default="true" id="6d3532ac-b4ac-4b7c-893d-1fc09625426b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipFitApplicationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipFitApplicationMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipFitCustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipFitCustomerMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipfitAdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipfitAdminMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipfitGymOwnerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/src/com/flipfit/client/FlipfitGymOwnerMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,20 +20,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2nBk3oqX9SdkNHyWyokqqn92Rvr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FlipFitApplicationMenu.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FlipFitApplicationMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.flipfit.client.FlipFitApplicationMenu" />
       <module name="JEDI-Flipkart-Flipfit-Repo" />
@@ -47,17 +57,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

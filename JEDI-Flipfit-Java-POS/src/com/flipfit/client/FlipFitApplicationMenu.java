@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Main client application for FlipFit.
  * This class manages user interactions for logging in, registering, changing passwords,
  * and navigating between different user roles (Customer, Gym Owner, Admin).
- * @Author Sanyam Lohan
+ * @author Sanyam Lohan
  */
 public class FlipFitApplicationMenu {
     public static Scanner scanner = new Scanner(System.in).useDelimiter("\n");

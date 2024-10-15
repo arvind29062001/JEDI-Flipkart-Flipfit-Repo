@@ -10,13 +10,14 @@ import java.util.Date;
 import java.util.List;
 /**
  * Interface defining operations related to customers in the FlipFit system.
+ * @author Samarth Bhatt
  */
 public interface FlipFitCustomerInterface {
 
     /**
      * Registers a new customer with the provided details.
      * @param username,password,email,phoneNumber,govId
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     void registerCustomer(String username, String email, String password, String phoneNumber,String govId);
 
@@ -24,7 +25,7 @@ public interface FlipFitCustomerInterface {
      * Retrieves details of all gym centers in a specific city.
      * @param city City name
      * @return List of gym center details
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     List<FlipFitGymCenter> getGymCentersListByCity(String city);
 
@@ -32,7 +33,7 @@ public interface FlipFitCustomerInterface {
      * Retrieves available slots for booking at a specific gym center on a given date.
      * @param centerId,date Date for which slots are to be retrieved
      * @return List of available slots
-     * @Author Samarth Bhattowmik
+     * @author Samarth Bhattowmik
      */
     List<FlipFitSlot> getAvailableSlots(String centerId, Date date);
 
@@ -40,7 +41,7 @@ public interface FlipFitCustomerInterface {
      * Retrieves bookings made by a customer identified by their customer ID.
      * @param customerId ID of the customer
      * @return List of customer bookings
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     List<FlipFitBooking> getCustomerBookings(String customerId);
 
@@ -48,14 +49,14 @@ public interface FlipFitCustomerInterface {
      * Books a slot for a user at a specific gym center on a given date and slot ID.
      * @param customerId,date,slotId,centerId ID of the gym center
      * @return True if booking is successful, false otherwise
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     boolean bookSlot(String customerId, Date date, String slotId, String centerId);
 
     /**
      * Cancels a booking identified by its booking ID.
      * @param bookingId ID of the booking to cancel
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     void cancelBookingById(String bookingId);
 
@@ -63,7 +64,7 @@ public interface FlipFitCustomerInterface {
      * Retrieves the plan(s) subscribed by a customer identified by their username.
      * @param userName Username of the customer
      * @return List of plans subscribed by the customer
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     List<UserPlan> getCustomerPlan(String userName);
 
@@ -72,7 +73,7 @@ public interface FlipFitCustomerInterface {
      * @param userName Username of the user
      * @param password Password of the user
      * @return True if the user is valid, false otherwise
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     boolean isUserValid(String userName, String password);
 
@@ -81,7 +82,7 @@ public interface FlipFitCustomerInterface {
      * Retrieves the profile details of a customer identified by their username.
      * @param userName Username of the customer
      * @return Customer profile information
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     FlipFitCustomer viewMyProfile(String userName);
 }

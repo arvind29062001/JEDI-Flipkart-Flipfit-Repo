@@ -5,20 +5,21 @@ import com.flipfit.bean.FlipFitGymCenter;
 import java.util.List;
 /**
  * Interface defining operations that an admin can perform in the FlipFit system.
+ * @author Sabarnabhowmik
  */
 
 public interface FlipFitAdminInterface {
     /**
      * Approves or rejects a gym center based on the provided ID.
      * @param gymCenterId,isApproved True to approve, false to reject
-     * @Author Sabarnabhowmik
+     * @author Sabarnabhowmik
      */
 
     void approveGymCenter(String gymCenterId, boolean isApproved);
     /**
      * Retrieves a list of pending gym centers awaiting approval.
      * @return List of pending gym centers
-     * @Author Sabarnabhowmik
+     * @author Sabarnabhowmik
      */
 
     List<FlipFitGymCenter> getPendingGymCentersList();
@@ -26,7 +27,7 @@ public interface FlipFitAdminInterface {
     /**
      * Retrieves a list of all gym centers
      * @return List of all gymCentersList
-     * @Author Sabarnabhowmik
+     * @author Sabarnabhowmik
      */
 
     List<FlipFitGymCenter> getAllGymCentersList();
@@ -34,7 +35,7 @@ public interface FlipFitAdminInterface {
     /**
      * removes GymCenter
      * @param gymCenterId
-     * @Author Sabarnabhowmik
+     * @author Sabarnabhowmik
      */
     void removeGymCenter(String gymCenterId);
 }

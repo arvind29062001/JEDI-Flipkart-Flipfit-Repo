@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 /**
  * Interface defining operations related to bookings in the FlipFit system.
+ * @author Sabarnabhowmik
  */
 
 public interface FlipFitBookingInterface {
@@ -21,7 +22,7 @@ public interface FlipFitBookingInterface {
      * Checks if there is any overlap in bookings for a customer on a specific date and slot.
      * @param customerId,date,slotId ID of the slot (time slot) for the booking
      * @return True if there is an overlap, false otherwise
-     * @Author Sabarnabhowmik
+     * @author Sabarnabhowmik
      */
 
     boolean checkBookingOverlap(String customerId, Date date, String slotId);
@@ -30,14 +31,14 @@ public interface FlipFitBookingInterface {
      * Retrieves a list of bookings made by a customer identified by their customer ID.
      * @param customerId ID of the customer
      * @return List of bookings made by the customer
-     * @Author Sabarnabhowmik
+     * @author Sabarnabhowmik
      */
 
     List<FlipFitBooking> getBookingListByCustomerId(String customerId);
     /**
      * Cancels a booking identified by its booking ID.
      * @param bookingID ID of the booking to cancel
-     * @Author Sabarnabhowmik
+     * @author Sabarnabhowmik
      */
 
     void cancelBooking(String bookingID);
@@ -46,7 +47,7 @@ public interface FlipFitBookingInterface {
      * Retrieves the plan(s) subscribed by a customer identified by their customer ID.
      * @param customerId ID of the customer
      * @return List of plans subscribed by the customer
-     * @Author Sabarnabhowmik
+     * @author Sabarnabhowmik
      */
 
     List<UserPlan> getCustomerPlan(String customerId);

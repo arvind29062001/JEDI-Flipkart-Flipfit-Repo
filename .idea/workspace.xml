@@ -1,10 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3532ac-b4ac-4b7c-893d-1fc09625426b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitBooking.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitBooking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitCustomer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitGymCenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitGymCenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitGymOwner.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitGymOwner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitPayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitRole.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitRole.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitSchedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitSchedule.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitSlot.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/FlipFitSlot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/Person.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/Person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitBooking.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitBooking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitCustomer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitGymCenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitGymCenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitGymOwner.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitGymOwner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitPayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitRole.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitRole.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitSchedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitSchedule.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitSlot.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/FlipFitSlot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/Person.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/class-use/Person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/bean/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitAdminInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitAdminInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitAdminService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitAdminService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitBookingInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitBookingInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitBookingService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitBookingService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitCustomerInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitCustomerInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitCustomerService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitCustomerService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitGymCenterInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitGymCenterInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitGymCenterService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitGymCenterService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitGymOwnerInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitGymOwnerInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitGymOwnerService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitGymOwnerService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitScheduleInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitScheduleInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitScheduleService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitScheduleService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitSlotInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitSlotInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitSlotService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/FlipFitSlotService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitAdminInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitAdminInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitAdminService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitAdminService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitBookingInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitBookingInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitBookingService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitBookingService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitCustomerInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitCustomerInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitCustomerService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitCustomerService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitGymCenterInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitGymCenterInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitGymCenterService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitGymCenterService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitGymOwnerInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitGymOwnerInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitGymOwnerService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitGymOwnerService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitScheduleInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitScheduleInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitScheduleService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitScheduleService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitSlotInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitSlotInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitSlotService.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/class-use/FlipFitSlotService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/business/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/FlipFitAdminMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/FlipFitAdminMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/FlipFitApplicationMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/FlipFitApplicationMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/FlipFitCustomerMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/FlipFitCustomerMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/FlipFitGymOwnerMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/FlipFitGymOwnerMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/class-use/FlipFitAdminMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/class-use/FlipFitAdminMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/class-use/FlipFitApplicationMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/class-use/FlipFitApplicationMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/class-use/FlipFitCustomerMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/class-use/FlipFitCustomerMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/class-use/FlipFitGymOwnerMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/class-use/FlipFitGymOwnerMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/client/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/Constants.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/Constants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/SQLConstants.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/SQLConstants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/class-use/Constants.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/class-use/Constants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/class-use/SQLConstants.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/class-use/SQLConstants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/constant/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitAdminDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitAdminDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitAdminDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitAdminDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitBookingDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitBookingDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitBookingDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitBookingDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitCustomerDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitCustomerDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitCustomerDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitCustomerDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitGymCenterDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitGymCenterDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitGymCenterDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitGymCenterDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitGymOwnerDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitGymOwnerDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitGymOwnerDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitGymOwnerDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitScheduleDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitScheduleDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitScheduleDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitScheduleDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitSlotDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitSlotDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitSlotDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/FlipFitSlotDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitAdminDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitAdminDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitAdminDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitAdminDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitBookingDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitBookingDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitBookingDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitBookingDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitCustomerDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitCustomerDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitCustomerDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitCustomerDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitGymCenterDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitGymCenterDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitGymCenterDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitGymCenterDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitGymOwnerDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitGymOwnerDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitGymOwnerDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitGymOwnerDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitScheduleDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitScheduleDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitScheduleDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitScheduleDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitSlotDAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitSlotDAO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitSlotDAOInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/class-use/FlipFitSlotDAOInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/dao/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/BookingFailedException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/BookingFailedException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/CenterNotFoundException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/CenterNotFoundException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/GymOwnerNotFoundException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/GymOwnerNotFoundException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/InvalidChoiceException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/InvalidChoiceException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/LoginFailedException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/LoginFailedException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/RegistrationFailedException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/RegistrationFailedException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/UserInvalidException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/UserInvalidException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/UserNotFoundException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/UserNotFoundException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/WrongCredentialsException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/WrongCredentialsException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/BookingFailedException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/BookingFailedException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/CenterNotFoundException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/CenterNotFoundException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/GymOwnerNotFoundException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/GymOwnerNotFoundException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/InvalidChoiceException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/InvalidChoiceException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/LoginFailedException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/LoginFailedException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/RegistrationFailedException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/RegistrationFailedException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/UserInvalidException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/UserInvalidException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/UserNotFoundException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/UserNotFoundException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/WrongCredentialsException.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/class-use/WrongCredentialsException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/exceptions/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/DatabaseConnection.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/DatabaseConnection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/Helper.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/Helper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/UserPlan.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/UserPlan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/class-use/DatabaseConnection.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/class-use/DatabaseConnection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/class-use/Helper.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/class-use/Helper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/class-use/UserPlan.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/class-use/UserPlan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/com/flipfit/helper/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-Java-POS/docs/serialized-form.html" afterDir="false" />
     </list>
+    <list id="60bbc897-2d30-4a3a-a8d4-1507cb74ea62" name="Changes by samarth.bhatt" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,22 +183,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2nBk3oqX9SdkNHyWyokqqn92Rvr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FlipFitApplicationMenu.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FlipFitApplicationMenu.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">

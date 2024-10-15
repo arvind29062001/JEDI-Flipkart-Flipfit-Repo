@@ -3,7 +3,7 @@ package com.flipfit.bean;
 import java.time.LocalTime;
 /**
  * Represents a slot of a FlipFit GymCentre
- * @Author Sanyam Lohan
+ * @author Arvind Yadav
  */
 
 public class FlipFitSlot {
@@ -14,7 +14,7 @@ public class FlipFitSlot {
     /**
      *
      * @param slotId,gymCenterId,slotTime is slotTime
-     * @Author Sanyam Lohan
+     * @author Arvind Yadav
      */
     public FlipFitSlot(String slotId, String gymCenterId, LocalTime slotTime) {
         this.slotId = slotId;
@@ -25,7 +25,7 @@ public class FlipFitSlot {
     /**
      * Getter for the slot ID.
      * @return the slot ID
-     * @Author Sanyam Lohan
+     * @author Arvind Yadav
      */
     public String getSlotId() {
         return slotId;
@@ -34,7 +34,7 @@ public class FlipFitSlot {
     /**
      * Getter for the center ID.
      * @return the center ID
-     * @Author Sanyam Lohan
+     * @author Arvind Yadav
      */
     public String getGymCenterId() {
         return gymCenterId;
@@ -43,7 +43,7 @@ public class FlipFitSlot {
     /**
      * Getter for the time of the slot.
      * @return the time of the slot (LocalTime object)
-     * @Author Sanyam Lohan
+     * @author Arvind Yadav
      */
 
     public LocalTime getSlotTime() {
@@ -53,7 +53,7 @@ public class FlipFitSlot {
     /**
      * Setter for the slot ID.
      * @param slotId the slot ID to set
-     * @Author Sanyam Lohan
+     * @author Arvind Yadav
      */
     public void setSlotId(String slotId) {
         this.slotId = slotId;
@@ -62,7 +62,7 @@ public class FlipFitSlot {
     /**
      * Setter for the center ID.
      * @param gymCenterId the center ID to set
-     * @Author Sanyam Lohan
+     * @author Arvind Yadav
      */
 
     public void setGymCenterId(String gymCenterId) {
@@ -72,7 +72,7 @@ public class FlipFitSlot {
     /**
      * Setter for the time of the slot.
      * @param slotTime the time to set for the slot (LocalTime object)
-     * @Author Sanyam Lohan
+     * @author Arvind Yadav
      */
 
     public void setSlotTime(LocalTime slotTime) {

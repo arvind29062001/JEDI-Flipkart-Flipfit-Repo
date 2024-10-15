@@ -20,7 +20,7 @@ import java.util.Scanner;
 /**
  * Provides the customer menu functionalities for the FlipFit application.
  * This class allows customers to edit their profile, view gyms, book slots, view and cancel bookings.
- * @Author Sanyam Lohan
+ * @author Sanyam Lohan
  */
 public class FlipFitCustomerMenu {
     private static Scanner scanner = new Scanner(System.in);
@@ -32,7 +32,7 @@ public class FlipFitCustomerMenu {
      * method for customer login
      * @param username,password password for login
      * @return true/false
-     * @Author Sanyam Lohan
+     * @author Sanyam Lohan
      */
     public boolean customerLogin(String username, String password) {
         if (customerService.isUserValid(username, password)) {
@@ -48,7 +48,7 @@ public class FlipFitCustomerMenu {
     /**
      *
      * @param userName for booking the slot
-     * @Author Sanyam Lohan
+     * @author Sanyam Lohan
      */
     private void bookSlotSubMenu(String userName) {
         System.out.println("Provide Location to search : ");
@@ -73,7 +73,7 @@ public class FlipFitCustomerMenu {
     /**
      * chooses slot for the customer
      * @param gymCentreId,userName,sqlDate,centreId parameters
-     * @Author Sanyam Lohan
+     * @author Sanyam Lohan
      */
     private void chooseSlot(String gymCentreId, String userName, Date sqlDate, String centreId) {
         System.out.println("Choose from the Below Slots");
@@ -98,7 +98,7 @@ public class FlipFitCustomerMenu {
     /**
      * prints bookings...
      * @param userName username
-     * @Author Sanyam Lohan
+     * @author Samarth Bhatt
      */
     private void printbookingsSubMenu(String userName){
         System.out.println("Bookings : ");
@@ -117,7 +117,7 @@ public class FlipFitCustomerMenu {
     /**
      *
      * @param userName username
-     * @Author Sanyam Lohan
+     * @author Samarth Bhatt
      */
     private void cancelBookingSubMenu(String userName){
         printbookingsSubMenu(userName);
@@ -130,7 +130,7 @@ public class FlipFitCustomerMenu {
     /**
      * shows customer main menu page
      * @param username username
-     * @Author Sanyam Lohan
+     * @author Samarth Bhatt
      */
     public void customerMainPage(String username) {
         LocalDateTime currentTime = LocalDateTime.now();

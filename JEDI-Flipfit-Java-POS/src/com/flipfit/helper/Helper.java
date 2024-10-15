@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @Author Pratik Singh
+ * @author Pratik Singh
  */
 public class Helper {
 

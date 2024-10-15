@@ -5,7 +5,7 @@ import static com.flipfit.constant.Constants.RESET_COLOR;
 
 /**
  * Exception thrown when User is not found
- * @Author Shakti Singh
+ * @author Shakti Singh
  */
 public class UserNotFoundException extends Exception {
     public UserNotFoundException(String message){

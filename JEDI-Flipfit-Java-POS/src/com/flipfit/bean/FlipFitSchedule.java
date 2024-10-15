@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.UUID;
 /**
  * Represents Schedule of any GymCentre Slot
- * @Author Arvind Yadav
+ * @author Arvind Yadav
  */
 
 public class FlipFitSchedule {
@@ -17,7 +17,7 @@ public class FlipFitSchedule {
     /**
      * Constructor for FlipFitSchedule.
      * @param date,slotId,availability the availability status of the slot (integer)
-     * @Author Arvind Yadav
+     * @author Arvind Yadav
      */
     public FlipFitSchedule(Date date, String slotId, int availability)  {
         this.scheduleId = UUID.randomUUID().toString();
@@ -29,7 +29,7 @@ public class FlipFitSchedule {
     /**
      * Getter for the schedule ID.
      * @return the schedule ID
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public String getScheduleId() {
         return scheduleId;
@@ -38,7 +38,7 @@ public class FlipFitSchedule {
     /**
      * Getter for the slot ID associated with the schedule.
      * @return the slot ID
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public String getSlotId() {
         return slotId;
@@ -47,7 +47,7 @@ public class FlipFitSchedule {
     /**
      * Getter for the availability status of the slot.
      * @return the availability status (integer)
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public int getAvailability() {
         return availability;
@@ -56,7 +56,7 @@ public class FlipFitSchedule {
     /**
      * Getter for the date of the schedule.
      * @return the date of the schedule (LocalDate object)
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public Date getDate() {
         return date;
@@ -65,7 +65,7 @@ public class FlipFitSchedule {
     /**
      * Setter for the schedule ID.
      * @param scheduleId the schedule ID to set
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public void setScheduleId(String scheduleId) {
         this.scheduleId = scheduleId;
@@ -74,7 +74,7 @@ public class FlipFitSchedule {
     /**
      * Setter for the slot ID associated with the schedule.
      * @param slotId the slot ID to set
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public void setSlotId(String slotId) {
         this.slotId = slotId;
@@ -83,7 +83,7 @@ public class FlipFitSchedule {
     /**
      * Setter for the availability status of the slot.
      * @param availability the availability status to set
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public void setAvailability(int availability) {
         this.availability = availability;
@@ -92,7 +92,7 @@ public class FlipFitSchedule {
     /**
      * Setter for the date of the schedule.
      * @param date the date to set for the schedule (LocalDate object)
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public void setDate(Date date) {
         this.date = date;

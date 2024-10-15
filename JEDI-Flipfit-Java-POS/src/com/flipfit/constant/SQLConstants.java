@@ -1,7 +1,7 @@
 package com.flipfit.constant;
 
 /**
- * @Author Shakti Singh
+ * @author Shakti Singh
  */
 public class SQLConstants {
 

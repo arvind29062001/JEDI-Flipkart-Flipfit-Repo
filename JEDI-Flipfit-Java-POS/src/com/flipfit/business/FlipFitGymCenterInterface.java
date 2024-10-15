@@ -8,13 +8,14 @@ import java.util.List;
 
 /**
  * Interface defining operations related to gym centers in the FlipFit system.
+ * @author Samarth Bhatt
  */
 
 public interface FlipFitGymCenterInterface {
 
     /**
      * Interface defining operations related to gym centers in the FlipFit system.
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     List<FlipFitGymCenter> getAllGymCenters();
 
@@ -22,7 +23,7 @@ public interface FlipFitGymCenterInterface {
      * Retrieves details of all gym centers owned by a specific gym owner.
      * @param gymOwnerId ID of the gym owner
      * @return List of gym centers owned by the gym owner
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     List<FlipFitGymCenter> getGymCentersByOwnerId(String gymOwnerId);
 
@@ -31,7 +32,7 @@ public interface FlipFitGymCenterInterface {
      * Retrieves details of gym centers located in a specific city.
      * @param city City name
      * @return List of gym centers in the specified city
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     List<FlipFitGymCenter> getGymCentersByCity(String city);
 
@@ -39,7 +40,7 @@ public interface FlipFitGymCenterInterface {
      * Retrieves available slots for booking at a specific gym center on a given date.
      * @param centerId,date Date for which slots are to be retrieved
      * @return List of available slots
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     List<FlipFitSlot> getAvailableSlotsByCenterAndDate(String centerId, Date date);
 
@@ -47,7 +48,7 @@ public interface FlipFitGymCenterInterface {
     /**
      * Adds a new gym center to the system.
      * @param gymCenter Gym center object to add
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      *
      */
     void addCenter(FlipFitGymCenter gymCenter);
@@ -55,7 +56,7 @@ public interface FlipFitGymCenterInterface {
     /**
      * Requests approval for a gym center identified by its ID.
      * @param gymCenterId ID of the gym center to request approval for
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     void requestGymCenterApproval(String gymCenterId);
 
@@ -63,7 +64,7 @@ public interface FlipFitGymCenterInterface {
      * Retrieves details of a gym center identified by its ID.
      * @param gymCenterId ID of the gym center
      * @return Gym center object
-     * @Author Samarth Bhatt
+     * @author Samarth Bhatt
      */
     FlipFitGymCenter getGymCenterById(String gymCenterId);
 }

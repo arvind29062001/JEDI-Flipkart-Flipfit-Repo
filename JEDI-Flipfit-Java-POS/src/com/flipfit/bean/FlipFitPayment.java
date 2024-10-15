@@ -2,6 +2,7 @@ package com.flipfit.bean;
 /**
  * Represents a payment in the FlipFit system.
  * Each payment is associated with a booking and contains details such as payment ID and amount paid.
+ * @author Arvind Yadav
  */
 
 public class FlipFitPayment {
@@ -12,7 +13,7 @@ public class FlipFitPayment {
     /**
      * Retrieves the payment ID.
      * @return Payment ID
-     * @Author Arvind Yadav
+     * @author Arvind Yadav
      */
     public String getPaymentId() {
         return paymentId;
@@ -21,7 +22,7 @@ public class FlipFitPayment {
     /**
      * Retrieves the amount paid for the payment.
      * @return Amount paid
-     * @Author Arvind Yadav
+     * @author Arvind Yadav
      */
     public String getAmountPaid() {
         return amountPaid;
@@ -30,7 +31,7 @@ public class FlipFitPayment {
     /**
      * Retrieves the booking ID associated with the payment.
      * @return Booking ID
-     * @Author Arvind Yadav
+     * @author Arvind Yadav
      */
     public String getBookingId() {
         return bookingId;
@@ -39,7 +40,7 @@ public class FlipFitPayment {
     /**
      * Sets the payment ID.
      * @param paymentId Payment ID to set
-     * @Author Arvind Yadav
+     * @author Arvind Yadav
      */
     public void setPaymentId(String paymentId) {
         this.paymentId = paymentId;
@@ -48,7 +49,7 @@ public class FlipFitPayment {
     /**
      * Sets the amount paid for the payment.
      * @param amountPaid Amount paid to set
-     * @Author Arvind Yadav
+     * @author Arvind Yadav
      */
     public void setAmountPaid(String amountPaid) {
         this.amountPaid = amountPaid;
@@ -57,7 +58,7 @@ public class FlipFitPayment {
     /**
      * Sets the booking ID associated with the payment.
      * @param bookingId Booking ID to set
-     * @Author Arvind Yadav
+     * @author Arvind Yadav
      */
     public void setBookingId(String bookingId) {
         this.bookingId = bookingId;

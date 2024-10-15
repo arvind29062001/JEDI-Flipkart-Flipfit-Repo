@@ -12,7 +12,7 @@ public class DatabaseConnection {
      *
      * @return Connection
      * @throws SQLException
-     * @Author Shakti Singh
+     * @author Shakti Singh
      */
     public static Connection connect() throws SQLException {
         if (singleInstance == null) {

@@ -1,7 +1,7 @@
 package com.flipfit.constant;
 
 /**
- * @Author Shakti Singh
+ * @author Ravi Teja
  */
 public class Constants {
     public static String GREEN_COLOR = "\u001B[32m";

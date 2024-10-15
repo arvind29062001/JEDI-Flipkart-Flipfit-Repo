@@ -5,7 +5,7 @@ import static com.flipfit.constant.Constants.RESET_COLOR;
 
 /**
  * Exception thrown when GymCentre not found
- * @Author Sanyam Lohan
+ * @author Samarth Bhatt
  */
 public class CenterNotFoundException extends RuntimeException{
     public CenterNotFoundException(String gymId){

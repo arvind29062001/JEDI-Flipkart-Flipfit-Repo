@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 /**
- * @Author Pratik Singh
+ * @author Pratik Singh
  */
 public class UserPlan {
     public String getSlotId() {

@@ -14,6 +14,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
 
+/**
+ * @author Sanyam Lohan
+ */
 public class FlipFitGymOwnerMenu {
     private static final Scanner scanner = new Scanner(System.in);
     private static final FlipFitGymOwnerInterface gymOwnerService = new FlipFitGymOwnerService();
@@ -24,7 +27,7 @@ public class FlipFitGymOwnerMenu {
      * login gymOwnerLogin
      * @param username,password parameters
      * @return true/false
-     * @Author Sanyam Lohan
+     * @author Sanyam Lohan
      */
     public boolean gymOwnerLogin(String username, String password) {
         FlipFitGymOwner gymOwner = gymOwnerService.loginGymOwner(username, password);
@@ -57,7 +60,7 @@ public class FlipFitGymOwnerMenu {
     /**
      *
      * @param gymOwner gymOwner
-     * @Author Sanyam Lohan
+     * @author Sanyam Lohan
      */
     public void gymOwnerClientMainPage(FlipFitGymOwner gymOwner) {
         LocalDateTime currentTime = LocalDateTime.now();

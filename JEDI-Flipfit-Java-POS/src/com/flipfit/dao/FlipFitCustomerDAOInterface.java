@@ -6,7 +6,7 @@ import com.flipfit.exceptions.UserInvalidException;
 /**
  * Data Access Object (DAO) interface for handling customer-related operations in FlipFit system.
  * This interface defines methods for registering customers, validating users, and retrieving customer details.
- * @Author Ravi Teja
+ * @author Ravi Teja
  */
 
 public interface FlipFitCustomerDAOInterface {
@@ -14,7 +14,7 @@ public interface FlipFitCustomerDAOInterface {
      * Registers a new customer with the provided details.
      * @param name,password,email,phoneNumber,govId Card number of the
      * @throws RegistrationFailedException If registration fails for any reason
-     * @Author Ravi Teja
+     * @author Ravi Teja
      */
 
     void registerCustomer(String name, String email, String password, String phoneNumber,String govId)throws RegistrationFailedException;
@@ -24,7 +24,7 @@ public interface FlipFitCustomerDAOInterface {
      * @param name,password Password of the user
      * @return True if the user is valid, false otherwise
      * @throws UserInvalidException If user validation fails
-     * @Author Ravi Teja
+     * @author Ravi Teja
      */
 
     boolean isUserValid(String name, String password)throws UserInvalidException;
@@ -33,7 +33,7 @@ public interface FlipFitCustomerDAOInterface {
      * Retrieves details of a customer based on their username.
      * @param name Username of the customer
      * @return The FlipFitCustomer object
-     * @Author Ravi Teja
+     * @author Ravi Teja
      */
 
     FlipFitCustomer getCustomerByName(String name);

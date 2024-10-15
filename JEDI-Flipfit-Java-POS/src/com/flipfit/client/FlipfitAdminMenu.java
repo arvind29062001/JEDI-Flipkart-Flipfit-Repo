@@ -10,7 +10,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
-
+/**
+ * @author Pratik Singh
+ */
 public class FlipFitAdminMenu {
     private static final Scanner scanner = new Scanner(System.in);
     private static final FlipFitAdminInterface adminService = new FlipFitAdminService();
@@ -105,7 +107,7 @@ public class FlipFitAdminMenu {
 
     /**
      * @param username,password password
-     * @Author Pratik Singh
+     * @author Pratik Singh
      */
     public void adminLogin(String username, String password) {
         if(username.equals("Ravi") && password.equals("Teja")) System.out.println(" Successfully logged in as ADMIN...\n");

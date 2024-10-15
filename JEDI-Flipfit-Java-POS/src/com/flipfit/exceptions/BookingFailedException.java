@@ -5,7 +5,7 @@ import static com.flipfit.constant.Constants.RESET_COLOR;
 
 /**
  * Exception thrown when Booking fails
- * @Author Sanyam Lohan
+ * @author Samarth Bhatt
  */
 public class BookingFailedException extends RuntimeException{
     public BookingFailedException(String message){

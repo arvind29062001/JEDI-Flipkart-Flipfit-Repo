@@ -2,7 +2,7 @@ package com.flipfit.bean;
 /**
  * Enum representing roles in the FlipFit system.
  * Roles include ADMIN, GYM_OWNER, and CUSTOMER.
- * @Author Arvind Yadav
+ * @author Arvind Yadav
  */
 public enum FlipFitRole {
     ADMIN,

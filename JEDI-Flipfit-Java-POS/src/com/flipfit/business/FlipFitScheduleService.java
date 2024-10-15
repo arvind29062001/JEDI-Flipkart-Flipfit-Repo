@@ -57,7 +57,7 @@ public class FlipFitScheduleService implements FlipFitScheduleInterface {
     }
 
     public List<FlipFitSlot> getAllAvailableSlotsByDate(String centerId, Date date) {
-        System.out.println(5);
+      //  System.out.println(5);
         List<FlipFitSlot> allSlotsOfThatCentre = slotService.getAllSlotsByGymCenter(centerId);
         List<FlipFitSlot> response = new ArrayList<>(allSlotsOfThatCentre);
 

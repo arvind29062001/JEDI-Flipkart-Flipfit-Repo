@@ -11,9 +11,8 @@ public class FlipFitBooking {
     private String scheduleId;
     /**
      * Parameterized constructor to create a new booking.
-     * @param customerId ID of the user making the booking
-     * @param scheduleId ID of the schedule being booked
-     *
+     * @param customerId,scheduleId
+     * @Author Arvind Yadav
      */
 
     public FlipFitBooking(String customerId, String scheduleId) {
@@ -22,9 +21,8 @@ public class FlipFitBooking {
     }
     /**
      * Parameterized constructor to create a booking with existing ID.
-     * @param bookingId ID of the booking
-     * @param customerId ID of the user making the booking
-     * @param scheduleId ID of the schedule being booked
+     * @param bookingId,customerId,scheduleId
+     * @Author Arvind Yadav
      */
 
     public FlipFitBooking(String bookingId, String customerId, String scheduleId) {
@@ -36,6 +34,7 @@ public class FlipFitBooking {
      /**
      * Retrieves the bookingId
      * @return bookingId
+      * @Author Arvind Yadav
      */
     public String getBookingId() {
         return bookingId;
@@ -44,14 +43,16 @@ public class FlipFitBooking {
     /**
      *  returns customerId
      * @return customerId
+     * @Author Arvind Yadav
      */
     public String getCustomerId() {
         return customerId;
     }
 
     /**
-     *  returns schedule Id
+     * returns schedule Id
      * @return schedule Id
+     * @Author Arvind Yadav
      */
     public String getScheduleId() {
         return scheduleId;
@@ -61,6 +62,7 @@ public class FlipFitBooking {
     /**
      * Sets the booking ID.
      * @param bookingId bookingId to set
+     * @Author Arvind Yadav
      */
 
     public void setBookingId(String bookingId) {
@@ -69,6 +71,7 @@ public class FlipFitBooking {
     /**
      * Sets the customer ID associated with the booking.
      * @param customerId ID to set
+     * @Author Arvind Yadav
      */
 
     public void setCustomerId(String customerId) {
@@ -78,6 +81,7 @@ public class FlipFitBooking {
     /**
      * sets schedule id
      * @param scheduleId
+     * @Author Arvind Yadav
      */
     public void setScheduleId(String scheduleId) {
         this.scheduleId = scheduleId;

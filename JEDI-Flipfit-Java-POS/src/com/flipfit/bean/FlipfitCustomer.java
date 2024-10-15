@@ -12,12 +12,8 @@ public class FlipFitCustomer extends Person {
 
     /**
      * Parameterized constructor to initialize customer details.
-     * @param id User ID of the customer
-     * @param name Username of the customer
-     * @param email Email of the customer
-     * @param password Password of the customer
-     * @param phoneNumber Phone number of the customer
-     * @param govId Card details of the customer
+     * @param id,name,email,password,phoneNumber,govId parameters
+     * @Author Arvind Yadav
      */
 
     public FlipFitCustomer(String id, String name, String email, String password, String phoneNumber,String govId) {
@@ -29,6 +25,7 @@ public class FlipFitCustomer extends Person {
     /**
      * Retrieves the phone number of the customer.
      * @return Customer's phone number
+     * @Author Arvind Yadav
      */
     public String getPhoneNumber() {
         return this.phoneNumber;
@@ -37,6 +34,7 @@ public class FlipFitCustomer extends Person {
     /**
      * Sets the phone number of the customer.
      * @param phoneNumber Customer's phone number to set
+     * @Author Arvind Yadav
      */
 
     public void setPhoneNumber(String phoneNumber) {
@@ -46,6 +44,7 @@ public class FlipFitCustomer extends Person {
     /**
      * returns govId
      * @return govId
+     * @Author Arvind Yadav
      */
     public String getGovId() {
         return this.govId;
@@ -54,6 +53,7 @@ public class FlipFitCustomer extends Person {
     /**
      * sets govId
      * @param govId
+     * @Author Arvind Yadav
      */
     public void setGovId(String govId) {
         this.govId = govId;

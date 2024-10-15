@@ -1,5 +1,8 @@
 package com.flipfit.constant;
 
+/**
+ * @Author Shakti Singh
+ */
 public class SQLConstants {
 
 //    person

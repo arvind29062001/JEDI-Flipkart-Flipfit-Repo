@@ -5,6 +5,7 @@ import static com.flipfit.constant.Constants.RESET_COLOR;
 
 /**
  * Exception thrown when regisyration fails
+ * @Author Shakti Singh
  */
 public class RegistrationFailedException extends Exception {
     public RegistrationFailedException(String gymOwnerId) {

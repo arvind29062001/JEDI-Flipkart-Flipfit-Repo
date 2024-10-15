@@ -5,6 +5,7 @@ import static com.flipfit.constant.Constants.RESET_COLOR;
 
 /**
  * Exception thrown when GymOwner not found
+ * @Author Sanyam Lohan
  */
 public class GymOwnerNotFoundException extends Exception {
     public GymOwnerNotFoundException(String gymOwnerId){

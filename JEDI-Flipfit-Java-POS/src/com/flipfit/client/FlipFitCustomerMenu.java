@@ -16,11 +16,24 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+
+/**
+ * Provides the customer menu functionalities for the FlipFit application.
+ * This class allows customers to edit their profile, view gyms, book slots, view and cancel bookings.
+ * @Author Sanyam Lohan
+ */
 public class FlipFitCustomerMenu {
     private static Scanner scanner = new Scanner(System.in);
     private FlipFitCustomerInterface customerService = new FlipFitCustomerService();
     private Object userName;
 
+
+    /**
+     * method for customer login
+     * @param username,password password for login
+     * @return true/false
+     * @Author Sanyam Lohan
+     */
     public boolean customerLogin(String username, String password) {
         if (customerService.isUserValid(username, password)) {
             System.out.println("Successfully logged in");
@@ -32,7 +45,11 @@ public class FlipFitCustomerMenu {
         return true;
     }
 
-
+    /**
+     *
+     * @param userName for booking the slot
+     * @Author Sanyam Lohan
+     */
     private void bookSlotSubMenu(String userName) {
         System.out.println("Provide Location to search : ");
         String location = scanner.next();
@@ -47,15 +64,20 @@ public class FlipFitCustomerMenu {
             System.out.print("Choose a gymCentre ID to proceed: ");
             String chosenGym = scanner.next();
             Date date = selectDate();
-            System.out.println(1);
+          //  System.out.println(1);
             chooseSlot(chosenGym,userName,date,chosenGym);
         }
 
     }
 
+    /**
+     * chooses slot for the customer
+     * @param gymCentreId,userName,sqlDate,centreId parameters
+     * @Author Sanyam Lohan
+     */
     private void chooseSlot(String gymCentreId, String userName, Date sqlDate, String centreId) {
         System.out.println("Choose from the Below Slots");
-        System.out.println(2);
+       // System.out.println(2);
         List<FlipFitSlot> availableSlots = customerService.getAvailableSlots(gymCentreId,sqlDate);
 
         if(availableSlots.isEmpty()){
@@ -68,9 +90,16 @@ public class FlipFitCustomerMenu {
             String slotID = scanner.next();
             System.out.println(slotID);
             if(!customerService.bookSlot(userName, sqlDate, slotID, centreId)) chooseSlot(gymCentreId, userName, sqlDate,centreId);
+
+
         }
     }
 
+    /**
+     * prints bookings...
+     * @param userName username
+     * @Author Sanyam Lohan
+     */
     private void printbookingsSubMenu(String userName){
         System.out.println("Bookings : ");
         List<FlipFitBooking> allBookingList= customerService.getCustomerBookings(userName);
@@ -85,6 +114,11 @@ public class FlipFitCustomerMenu {
         System.out.println("----");
     }
 
+    /**
+     *
+     * @param userName username
+     * @Author Sanyam Lohan
+     */
     private void cancelBookingSubMenu(String userName){
         printbookingsSubMenu(userName);
         System.out.println("Select the Booking you want to cancel: ");
@@ -93,6 +127,11 @@ public class FlipFitCustomerMenu {
 
     }
 
+    /**
+     * shows customer main menu page
+     * @param username username
+     * @Author Sanyam Lohan
+     */
     public void customerMainPage(String username) {
         LocalDateTime currentTime = LocalDateTime.now();
         DateTimeFormatter myFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");

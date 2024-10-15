@@ -32,14 +32,14 @@ public class FlipFitSlotDAO implements FlipFitSlotDAOInterface{
     }
 
     public List<FlipFitSlot> getSlotListByCenterId(String centerId) {
-        System.out.println(7);
+      //  System.out.println(7);
         List<FlipFitSlot> slotList = new ArrayList<>();
         try {
             Connection conn = DatabaseConnection.connect();
             PreparedStatement ps = conn.prepareStatement(SQLConstants.GET_SLOTS_BY_GYM_CENTER);
             ps.setString(1, centerId);
             ResultSet rs = ps.executeQuery();
-            System.out.println(8);
+          //  System.out.println(8);
 
             while (rs.next()) {
                 String slotId = rs.getString("slotId");

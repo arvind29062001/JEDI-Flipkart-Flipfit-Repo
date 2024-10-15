@@ -3,12 +3,6 @@ package com.flipfit.helper;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-/*
-*   @Author
-*   @Exception  sql exception
-*   @Parameters method parameters
-*
-*/
 
 public class DatabaseConnection {
 
@@ -16,8 +10,9 @@ public class DatabaseConnection {
 
     /**
      *
-     * @return
+     * @return Connection
      * @throws SQLException
+     * @Author Shakti Singh
      */
     public static Connection connect() throws SQLException {
         if (singleInstance == null) {

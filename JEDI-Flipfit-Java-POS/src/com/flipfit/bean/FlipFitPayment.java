@@ -12,46 +12,52 @@ public class FlipFitPayment {
     /**
      * Retrieves the payment ID.
      * @return Payment ID
+     * @Author Arvind Yadav
      */
     public String getPaymentId() {
         return paymentId;
     }
 
     /**
-     *
-     * @return amount paid
+     * Retrieves the amount paid for the payment.
+     * @return Amount paid
+     * @Author Arvind Yadav
      */
     public String getAmountPaid() {
         return amountPaid;
     }
 
     /**
-     *
-     * @return BookingId
+     * Retrieves the booking ID associated with the payment.
+     * @return Booking ID
+     * @Author Arvind Yadav
      */
     public String getBookingId() {
         return bookingId;
     }
 
     /**
-     *
-     * @param paymentId
+     * Sets the payment ID.
+     * @param paymentId Payment ID to set
+     * @Author Arvind Yadav
      */
     public void setPaymentId(String paymentId) {
         this.paymentId = paymentId;
     }
 
     /**
-     *
-     * @param amountPaid
+     * Sets the amount paid for the payment.
+     * @param amountPaid Amount paid to set
+     * @Author Arvind Yadav
      */
     public void setAmountPaid(String amountPaid) {
         this.amountPaid = amountPaid;
     }
 
     /**
-     *
-     * @param bookingId
+     * Sets the booking ID associated with the payment.
+     * @param bookingId Booking ID to set
+     * @Author Arvind Yadav
      */
     public void setBookingId(String bookingId) {
         this.bookingId = bookingId;

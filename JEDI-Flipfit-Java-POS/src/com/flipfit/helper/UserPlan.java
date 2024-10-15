@@ -3,6 +3,9 @@ package com.flipfit.helper;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+/**
+ * @Author Pratik Singh
+ */
 public class UserPlan {
     public String getSlotId() {
         return slotId;

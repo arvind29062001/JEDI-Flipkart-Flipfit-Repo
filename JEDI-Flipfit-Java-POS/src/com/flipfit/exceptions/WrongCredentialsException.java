@@ -5,6 +5,7 @@ import static com.flipfit.constant.Constants.RESET_COLOR;
 
 /**
  * Exception thrown when wrong credentials entered
+ * @Author Pratik Singh
  */
 public class WrongCredentialsException extends Exception {
     public WrongCredentialsException() {

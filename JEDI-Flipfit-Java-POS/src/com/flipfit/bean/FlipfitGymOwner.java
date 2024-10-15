@@ -12,11 +12,8 @@ public class FlipFitGymOwner extends Person {
     private List<String> gymCenterIdList;
     /**
      * Parameterized constructor to initialize gym owner details.
-     * @param id User ID of the gym owner
-     * @param name Username of the gym owner
-     * @param email Email of the gym owner
-     * @param password Password of the gym owner
-     * @param govId PAN number of the gym owner
+     * @param id,name,email,password,govId parameters
+     * @Author Arvind Yadav
      */
 
     public FlipFitGymOwner(String id, String name, String email, String password, String govId) {
@@ -25,40 +22,48 @@ public class FlipFitGymOwner extends Person {
     }
 
     /**
-     *
-     * @return govId
+     * Retrieves the govId of the gym owner.
+     * @return govId of the gym owner
+     * @Author Arvind Yadav
      */
+
     public String getGovId() {
         return this.govId;
     }
 
     /**
-     *
-     * @return list of gymCenterIds
+     * Retrieves the list of gym center IDs associated with the gym owner.
+     * @return List of gym center IDs
+     * @Author Arvind Yadav
      */
+
     public List<String> getGymCenterIdList() {
         return this.gymCenterIdList;
     }
 
+
     /**
-     *
-     * @param govId
+     * Sets the govId of the gym owner.
+     * @param govId govId to set
+     * @Author Arvind Yadav
      */
     public void SetGovId(String govId) {
         this.govId = govId;
     }
 
     /**
-     *
-     * @param gymCenterIdList
+     * Sets the list of gym center IDs associated with the gym owner.
+     * @param gymCenterIdList List of gym center IDs to set
+     * @Author Arvind Yadav
      */
     public void setGymCenterIdList(List<String> gymCenterIdList) {
         this.gymCenterIdList = gymCenterIdList;
     }
 
     /**
-     *
-     * @param gymCenterId
+     * Adds a gym center ID to the list associated with the gym owner.
+     * @param gymCenterId Gym center ID to add
+     * @Author Arvind Yadav
      */
     public void addGymCenterId(String gymCenterId) {
         this.gymCenterIdList.add(gymCenterId);

@@ -7,6 +7,9 @@ import com.flipfit.bean.FlipFitSlot;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @Author Pratik Singh
+ */
 public class Helper {
 
     public static void printGymCenters(List<FlipFitGymCenter> gymCenters) {

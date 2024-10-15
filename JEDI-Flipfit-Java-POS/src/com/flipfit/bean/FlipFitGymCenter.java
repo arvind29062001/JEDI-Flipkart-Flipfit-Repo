@@ -29,13 +29,8 @@ public class FlipFitGymCenter {
     public FlipFitGymCenter() {}
     /**
      * Parameterized constructor to initialize gym center details.
-     * @param gymCenterId ID of the gym center
-     * @param gymOwnerId ID of the owner of the gym center
-     * @param gymCenterName Name of the gym center
-     * @param city City where the gym center is located
-     * @param capacity Maximum capacity of the gym center
-     * @param price Price associated with the gym center
-     * @param isApproved Approval status of the gym center
+     * @param gymCenterId,gymOwnerId,gymCenterName,city,capacity,price,isApproved parameters
+     * @Author Arvind Yadav
      */
 
     public FlipFitGymCenter(String gymCenterId, String gymCenterName, String gymOwnerId, String city, int capacity, int price, boolean isApproved) {
@@ -50,6 +45,7 @@ public class FlipFitGymCenter {
     /**
      * Retrieves the ID of the gym center.
      * @return ID of the gym center
+     * @Author Arvind Yadav
      */
     public String getGymCenterId() {
         return this.gymCenterId;
@@ -58,6 +54,7 @@ public class FlipFitGymCenter {
     /**
      * Retrieves the name of the gym center.
      * @return Name of the gym center
+     * @Author Arvind Yadav
      */
     public String getGymCenterName() {
         return this.gymCenterName;
@@ -65,6 +62,7 @@ public class FlipFitGymCenter {
     /**
      * Retrieves the ID of the owner of the gym center.
      * @return Owner ID of the gym center
+     * @Author Arvind Yadav
      */
 
     public String getGymOwnerId() {
@@ -73,87 +71,99 @@ public class FlipFitGymCenter {
     /**
      * Retrieves the city where the gym center is located.
      * @return City of the gym center
+     * @Author Arvind Yadav
      */
     public String getCity() {
         return this.city;
     }
 
     /**
-     *
-     * @return capacity
+     * Retrieves the maximum capacity of the gym center.
+     * @return Capacity of the gym center
+     * @Author Arvind Yadav
      */
     public int getCapacity() {
         return this.capacity;
     }
 
     /**
-     *
-     * @return price
+     * Retrieves the price associated with the gym center.
+     * @return Price of the gym center
+     * @Author Arvind Yadav
      */
     public int getPrice() {
         return this.price;
     }
 
     /**
-     *
-     * @return True/False
+     * Checks if the gym center is approved.
+     * @return True if the gym center is approved, false otherwise
+     * @Author Arvind Yadav
      */
+
     public boolean isApproved() {
         return this.isApproved;
     }
 
     /**
-     *
-     * @param gymCenterId
-     * @return gymCenterId
+     * Sets the ID of the gym center.
+     * @param gymCenterId ID to set
+     * @Author Arvind Yadav
      */
     public void setGymCenterId(String gymCenterId) {
         this.gymCenterId = gymCenterId;
     }
 
     /**
-     *
-     * @param gymCenterName
+     * Sets the name of the gym center.
+     * @param gymCenterName Name to set
+     * @Author Arvind Yadav
      */
     public void setGymCenterName(String gymCenterName) {
         this.gymCenterName = gymCenterName;
     }
 
     /**
-     *
-     * @param gymOwnerId
+     * Sets the ID of the owner of the gym center.
+     * @param gymOwnerId Owner ID to set
+     * @Author Arvind Yadav
      */
+
     public void setGymOwnerId(String gymOwnerId) {
         this.gymOwnerId = gymOwnerId;
     }
 
     /**
-     *
-     * @param city
+     * Sets the city where the gym center is located.
+     * @param city City to set
+     * @Author Arvind Yadav
      */
     public void setCity(String city) {
         this.city = city;
     }
 
     /**
-     *
-     * @param capacity
+     * sets the capacity of the gym
+     * @param capacity Capacity to set
+     * @Author Arvind Yadav
      */
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 
     /**
-     *
-     * @param price
+     * Sets the price associated with the gym center.
+     * @param price Price to set
+     * @Author Arvind Yadav
      */
     public void setPrice(int price) {
         this.price = price;
     }
 
     /**
-     *
-     * @param isApproved
+     * sets approval status
+     * @param isApproved approval status to set
+     * @Author Arvind Yadav
      */
     public void setApproved(boolean isApproved) {
         this.isApproved = isApproved;

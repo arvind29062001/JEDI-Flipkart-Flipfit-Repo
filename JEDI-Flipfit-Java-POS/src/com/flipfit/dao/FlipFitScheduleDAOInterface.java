@@ -23,6 +23,7 @@ public interface FlipFitScheduleDAOInterface {
      * Retrieves a schedule based on its ID.
      * @param scheduleId ID of the schedule to retrieve
      * @return The FlipFitSchedule object
+     * @Author Ravi Teja
      */
 
     FlipFitSchedule getScheduleById(String scheduleId);
@@ -31,15 +32,16 @@ public interface FlipFitScheduleDAOInterface {
      * Retrieves all schedules scheduled for a specific date.
      * @param date Date for which schedules are to be retrieved
      * @return List of schedules scheduled for the specified date
+     * @Author Ravi Teja
      */
 
     List<FlipFitSchedule> getScheduleListByDate(Date date);
 
     /**
      * Modifies a schedule based on its ID and action.
-     * @param scheduleId ID of the schedule to modify
-     * @param action Action to perform on the schedule (e.g., update, delete)
+     * @param scheduleId,action Action to perform on the schedule (e.g., update, delete)
      * @return True if the modification was successful, false otherwise
+     * @Author Ravi Teja
      */
 
     boolean modifySchedule(String scheduleId, int action);

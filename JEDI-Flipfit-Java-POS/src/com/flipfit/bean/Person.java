@@ -1,5 +1,7 @@
 package com.flipfit.bean;
-
+/**
+ * Represents a FlipFit User
+ */
 public class Person {
     private String id;
     private String name;
@@ -8,13 +10,11 @@ public class Person {
     private FlipFitRole role;
 
     /**
-     *
-     * @param id
-     * @param name
-     * @param email
-     * @param password
-     * @param role
+     * Parameterized constructor for FlipFitUser.
+     * @param id,name,email,password,role the user's role (FlipFitRole object)
+     * @Author Arvind Yadav
      */
+
     public Person(String id, String name, String email, String password, FlipFitRole role) {
         this.id = id;
         this.email = email;
@@ -27,40 +27,45 @@ public class Person {
     //  getters
 
     /**
-     *
-     * @return id
+     * Getter for the user's role.
+     * @return the FlipFitRole object representing the user's role
+     * @Author Arvind Yadav
      */
     public String getId() {
         return this.id;
     }
 
     /**
-     *
-     * @return name
+     * Getter for the user name.
+     * @return the user name
+     * @Author Arvind Yadav
      */
     public String getName() {
         return this.name;
     }
 
     /**
-     *
-     * @return email
+     * Getter for the user's email address.
+     * @return the user's email address
+     * @Author Arvind Yadav
      */
     public String getEmail() {
         return this.email;
     }
 
     /**
-     *
-     * @return password
+     * Getter for the user's password.
+     * @return the user's password
+     * @Author Arvind Yadav
      */
     public String getPassword() {
         return this.password;
     }
 
     /**
-     *
-     * @return role
+     * Getter for the user's role.
+     * @return the FlipFitRole object representing the user's role
+     * @Author Arvind Yadav
      */
     public FlipFitRole getRole() {
         return this.role;
@@ -69,40 +74,46 @@ public class Person {
     //  setters
 
     /**
-     *
-     * @param id
+     * Setter for the user ID.
+     * @param id the user ID to set
+     * @Author Arvind Yadav
      */
     public void setId(String id) {
         this.id = id;
     }
 
     /**
-     *
-     * @param name
+     * Setter for the user name.
+     * @param name the user name to set
+     * @Author Arvind Yadav
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     *
-     * @param email
+     * Setter for the user's email address.
+     * @param email the email address to set
+     * @Author Arvind Yadav
      */
+
     public void setEmail(String email) {
         this.email = email;
     }
 
     /**
-     *
-     * @param password
+     * Setter for the user's password.
+     * @param password the password to set
+     * @Author Arvind Yadav
      */
     public void setPassword(String password) {
         this.password = password;
     }
 
     /**
-     *
-     * @param role
+     * Setter for the user's role.
+     * @param role the FlipFitRole object to set
+     * @Author Arvind Yadav
      */
     public  void setRole(FlipFitRole role) {
         this.role = role;

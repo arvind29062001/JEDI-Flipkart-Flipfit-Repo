@@ -20,7 +20,12 @@ public class FlipFitGymOwnerMenu {
     private static final FlipFitGymCenterInterface gymCenterService = new FlipFitGymCenterService();
     private static final FlipFitSlotInterface slotService = new FlipFitSlotService();
 
-
+    /**
+     * login gymOwnerLogin
+     * @param username,password parameters
+     * @return true/false
+     * @Author Sanyam Lohan
+     */
     public boolean gymOwnerLogin(String username, String password) {
         FlipFitGymOwner gymOwner = gymOwnerService.loginGymOwner(username, password);
         if(gymOwner != null) {
@@ -49,6 +54,11 @@ public class FlipFitGymOwnerMenu {
         gymOwnerService.registerGymOwner(username, password, email, govId);
     }
 
+    /**
+     *
+     * @param gymOwner gymOwner
+     * @Author Sanyam Lohan
+     */
     public void gymOwnerClientMainPage(FlipFitGymOwner gymOwner) {
         LocalDateTime currentTime = LocalDateTime.now();
         DateTimeFormatter myFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");

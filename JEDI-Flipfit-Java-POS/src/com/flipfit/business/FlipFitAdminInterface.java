@@ -10,14 +10,15 @@ import java.util.List;
 public interface FlipFitAdminInterface {
     /**
      * Approves or rejects a gym center based on the provided ID.
-     * @param gymCenterId ID of the gym center to approve/reject
-     * @param isApproved True to approve, false to reject
+     * @param gymCenterId,isApproved True to approve, false to reject
+     * @Author Sabarnabhowmik
      */
 
     void approveGymCenter(String gymCenterId, boolean isApproved);
     /**
      * Retrieves a list of pending gym centers awaiting approval.
      * @return List of pending gym centers
+     * @Author Sabarnabhowmik
      */
 
     List<FlipFitGymCenter> getPendingGymCentersList();
@@ -25,6 +26,7 @@ public interface FlipFitAdminInterface {
     /**
      * Retrieves a list of all gym centers
      * @return List of all gymCentersList
+     * @Author Sabarnabhowmik
      */
 
     List<FlipFitGymCenter> getAllGymCentersList();
@@ -32,6 +34,7 @@ public interface FlipFitAdminInterface {
     /**
      * removes GymCenter
      * @param gymCenterId
+     * @Author Sabarnabhowmik
      */
     void removeGymCenter(String gymCenterId);
 }

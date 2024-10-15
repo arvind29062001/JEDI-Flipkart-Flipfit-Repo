@@ -33,7 +33,7 @@ public class FlipFitCustomerService implements FlipFitCustomerInterface {
     }
 
     public List<FlipFitSlot> getAvailableSlots(String centerId, Date date) {
-        System.out.println(3);
+      //  System.out.println(3);
         return gymCenterService.getAvailableSlotsByCenterAndDate(centerId, date);
     }
 

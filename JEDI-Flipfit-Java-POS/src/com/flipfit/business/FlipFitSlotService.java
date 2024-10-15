@@ -10,7 +10,7 @@ public class FlipFitSlotService implements FlipFitSlotInterface {
     private static final FlipFitSlotDAO flipFitSlotDAO = new FlipFitSlotDAO();
 
     public List<FlipFitSlot> getAllSlotsByGymCenter(String centerId) {
-        System.out.println(6);
+     //   System.out.println(6);
         return flipFitSlotDAO.getSlotListByCenterId(centerId);
     }
 

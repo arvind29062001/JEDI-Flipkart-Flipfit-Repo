@@ -48,4 +48,10 @@ public class SQLConstants {
     public static final String ADD_SLOT = "INSERT INTO FlipFit.FlipFitSlots (slotId, gymCenterId, slotTime) VALUES (?, ?, ?);";
     public static final String GET_SLOT_BY_ID = "SELECT * FROM FlipFit.FlipFitSlots WHERE slotId=?;";
     public static final String GET_SLOT_BY_ID_AND_GYM_CENTER_ID = "SELECT * FROM FlipFit.FlipFitSlots WHERE slotId=? AND gymCenterId=?;";
+
+
+    // Payments
+
+    public static final String ADD_NEW_PAYMENT_BY_ID ="INSERT INTO FlipFit.FlipFitPayments(paymentId,amountPaid,bookingId)VALUES(?,?,?);";
+    public static final String GET_PAYMENT_BY_ID= " SELECT * FROM FlipFit.FlipFitPayments Where paymentId=?;";
 }

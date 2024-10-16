@@ -22,7 +22,7 @@ public class FlipFitScheduleService implements FlipFitScheduleInterface {
             int availability = gymCenterService.getGymCenterById(centreID).getCapacity();
             FlipFitSchedule schedule = new FlipFitSchedule(date, slotId, availability);
             flipFitScheduleDAO.addSchedule(schedule);
-            System.out.println("Schedule created");
+           // System.out.println("Schedule created");
             return schedule;
         } catch (Exception e) {
             System.out.println(e.getMessage());

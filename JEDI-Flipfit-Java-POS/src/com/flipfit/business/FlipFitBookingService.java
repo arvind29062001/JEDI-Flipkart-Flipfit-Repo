@@ -23,6 +23,7 @@ public class FlipFitBookingService implements FlipFitBookingInterface {
                 System.out.println("No seats available for the booking");
                 return;
             }
+
             bookingDAO.addBooking(userName, scheduleID);
         } catch (BookingFailedException e) {
             System.out.println("Failed to add booking");

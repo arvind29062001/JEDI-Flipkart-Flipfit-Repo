@@ -8,6 +8,13 @@ package com.flipfit.bean;
 public class FlipFitPayment {
     private String paymentId;
     private String amountPaid;
+
+    public FlipFitPayment(String paymentId, String amountPaid, String bookingId) {
+        this.paymentId = paymentId;
+        this.amountPaid = amountPaid;
+        this.bookingId = bookingId;
+    }
+
     private String bookingId;
 
     /**

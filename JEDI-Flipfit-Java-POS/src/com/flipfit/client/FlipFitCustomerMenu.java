@@ -20,7 +20,7 @@ import java.util.Scanner;
 /**
  * Provides the customer menu functionalities for the FlipFit application.
  * This class allows customers to edit their profile, view gyms, book slots, view and cancel bookings.
- * @author Sanyam Lohan
+ * @author Samarth Bhatt
  */
 public class FlipFitCustomerMenu {
     private static Scanner scanner = new Scanner(System.in);
@@ -48,7 +48,7 @@ public class FlipFitCustomerMenu {
     /**
      *
      * @param userName for booking the slot
-     * @author Sanyam Lohan
+     * @author Samarth Bhatt
      */
     private void bookSlotSubMenu(String userName) {
         System.out.println("Provide Location to search : ");
@@ -73,7 +73,7 @@ public class FlipFitCustomerMenu {
     /**
      * chooses slot for the customer
      * @param gymCentreId,userName,sqlDate,centreId parameters
-     * @author Sanyam Lohan
+     * @author Samarth Bhatt
      */
     private void chooseSlot(String gymCentreId, String userName, Date sqlDate, String centreId) {
         System.out.println("Choose from the Below Slots");

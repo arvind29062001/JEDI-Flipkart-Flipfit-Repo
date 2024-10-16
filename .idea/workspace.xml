@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3532ac-b4ac-4b7c-893d-1fc09625426b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JEDI-Group-H-FlipFit-Dropwizard/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JEDI-Group-H-FlipFit-Dropwizard/.idea/JEDI-Group-H-FlipFit-Dropwizard.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JEDI-Group-H-FlipFit-Dropwizard/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JEDI-Group-H-FlipFit-Dropwizard/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6d3532ac-b4ac-4b7c-893d-1fc09625426b" name="Default Changelist" comment="" />
     <list id="60bbc897-2d30-4a3a-a8d4-1507cb74ea62" name="Changes by samarth.bhatt" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +36,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/samarth.bhatt/Desktop/JEDI-Flipkart-Flipfit-Repo",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -79,6 +76,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728453659858</updated>
       <workItem from="1728453661484" duration="9396000" />
+      <workItem from="1729088464922" duration="10000" />
     </task>
     <servers />
   </component>
